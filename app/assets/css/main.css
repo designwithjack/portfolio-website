@@ -1,0 +1,86 @@
+@import 'tailwindcss';
+
+/* Moderat font faces */
+@font-face {
+  font-family: 'Moderat';
+  src:
+    url('/fonts/Moderat-Light.woff2') format('woff2'),
+    url('/fonts/Moderat-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Moderat';
+  src:
+    url('/fonts/Moderat-Regular.woff2') format('woff2'),
+    url('/fonts/Moderat-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Moderat';
+  src:
+    url('/fonts/Moderat-Medium.woff2') format('woff2'),
+    url('/fonts/Moderat-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Design tokens — edit these to retheme the whole site */
+@theme {
+  --font-sans: 'Moderat', system-ui, sans-serif;
+
+  --color-background: #000000;
+  --color-foreground: #ffffff;
+  --color-muted: rgba(255, 255, 255, 0.6);
+  --color-border: rgba(255, 255, 255, 0.2);
+  --page-max-width: 1200px;
+
+  --breakpoint-xs: 30rem; /* 480px */
+}
+
+/* Base resets */
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overscroll-behavior: none;
+  }
+}
+
+/* Shared page container — max-width + horizontal padding */
+@utility page-container {
+  width: min(90vw, var(--page-max-width));
+  margin-inline: auto;
+}
+
+/* Light surface exception — apply to any container that sits on a white/light background.
+   All children using border-border, text-muted, bg-background etc. will automatically
+   get the correct light-surface values via CSS cascade. */
+@utility surface-light {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  --color-background: var(--color-white);
+  --color-foreground: var(--color-black);
+  --color-muted: rgba(0, 0, 0, 0.6);
+  --color-border: rgba(0, 0, 0, 0.22);
+}
+
+/* Page content wrapper — use this as the outermost div on each page.
+   Rounds the bottom corners and adds clearance so the fixed footer is exposed
+   when the user scrolls to the end. */
+@utility page-content {
+  background-color: var(--color-background);
+  border-bottom-left-radius: 55px;
+  border-bottom-right-radius: 55px;
+
+  padding-bottom: 48px;
+}
