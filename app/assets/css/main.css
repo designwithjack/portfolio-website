@@ -46,7 +46,8 @@
 
 /* Base resets */
 @layer base {
-  html {
+  html,
+  body {
     font-family: var(--font-sans);
     background-color: var(--color-background);
     color: var(--color-foreground);
@@ -72,6 +73,14 @@
   --color-foreground: var(--color-black);
   --color-muted: rgba(0, 0, 0, 0.6);
   --color-border: rgba(0, 0, 0, 0.22);
+}
+
+/* Full viewport height — use 100dvh on supporting browsers (e.g. iPhone Safari)
+   so the layout tracks the visible viewport and content isn’t cropped by browser
+   chrome; 100vh fallback for older browsers. */
+@utility min-h-screen-dynamic {
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 /* Page content wrapper — use this as the outermost div on each page.
