@@ -5,12 +5,12 @@
     <div
       class="page-container text-foreground flex items-end justify-between gap-10 text-base"
     >
-      <div class="flex flex-col gap-10 sm:flex-row">
+      <div class="flex flex-col gap-5 sm:gap-11 sm:flex-row">
         <a
           href="mailto:hello@designwithjack.com?subject=Chat%20with%20Jack"
           target="_blank"
           rel="noopener noreferrer"
-          class="flex items-center gap-3 py-1.5 transition-opacity hover:opacity-60"
+          class="flex items-center gap-4 py-1.5 transition-opacity hover:opacity-60"
         >
           <img
             src="/images/email.svg"
@@ -23,7 +23,7 @@
           href="https://www.linkedin.com/in/jack-os"
           target="_blank"
           rel="noopener noreferrer"
-          class="flex items-center gap-3 py-1.5 transition-opacity hover:opacity-60"
+          class="flex items-center gap-4 py-1.5 transition-opacity hover:opacity-60"
         >
           <img
             src="/images/linkedin.svg"
@@ -37,7 +37,7 @@
           href="https://github.com/designwithjack"
           target="_blank"
           rel="noopener noreferrer"
-          class="flex items-center gap-3 py-1.5 transition-opacity hover:opacity-60"
+          class="flex items-center gap-4 py-1.5 transition-opacity hover:opacity-60"
         >
           <img
             src="/images/github.svg"

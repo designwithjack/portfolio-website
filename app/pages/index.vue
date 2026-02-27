@@ -1,7 +1,7 @@
 <template>
   <!-- page-content: full-width card with rounded-b corners + footer clearance -->
   <div class="page-content">
-    <div class="page-container pt-54 pb-24">
+    <div class="page-container pt-40 lg:pt-54 pb-24">
       <section
         class="xs:text-4xl xs:leading-11 max-w-2xl text-3xl leading-9 font-light text-balance"
       >
@@ -15,7 +15,7 @@
       </section>
       <section class="pt-[7.5vw]">
         <h2
-          class="mb-6 text-sm font-medium tracking-[0.105em] uppercase opacity-70"
+          class="mt-5 mb-2.5 text-sm font-medium tracking-[0.105em] uppercase opacity-70"
         >
           Experience
         </h2>
@@ -147,7 +147,7 @@
                 </p>
               </ExperienceItem>
               <div
-                class="flex flex-col gap-3 pt-8 pb-9 sm:flex-row sm:gap-16 md:gap-20"
+                class="flex flex-col gap-3 py-9 sm:flex-row sm:gap-16 md:gap-20"
               >
                 <div class="min-w-40 md:min-w-60">
                   <h4 class="text-base leading-5 sm:pt-0.5">
@@ -163,20 +163,46 @@
 
           <div
             v-if="!showAllExperience"
-            class="pointer-events-none absolute inset-x-0 -bottom-2 h-28 bg-linear-to-t from-black to-transparent"
+            class="pointer-events-none absolute inset-x-0 bottom-0 h-22 bg-linear-to-t from-black to-transparent"
           ></div>
         </div>
 
-        <div class="pt-6">
+        <div class="mb-8 border-border border-b">
           <Button
             variant="secondary"
             type="button"
             :aria-expanded="showAllExperience"
             aria-controls="experience-content"
             @click="showAllExperience = !showAllExperience"
+            class="absolute left-1/2 -translate-x-1/2 -translate-y-1/2"
           >
             {{ showAllExperience ? "Show less" : "Show more" }}
           </Button>
+        </div>
+      </section>
+      <section class="pt-[7.5vw]">
+        <h2
+          class="mt-5 mb-2.5 text-sm font-medium tracking-[0.105em] uppercase opacity-70"
+        >
+          Education
+        </h2>
+        <div class="flex flex-col gap-3 pt-9 sm:flex-row sm:gap-16 md:gap-20">
+          <div class="flex min-w-40 md:min-w-60">
+            <h4 class="text-lg leading-6 sm:pt-0.5">Bournemouth University</h4>
+          </div>
+          <div class="max-w-md text-base text-pretty">
+            <p>BA (Hons) Interactive Media Production</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-3 py-9 sm:flex-row sm:gap-16 md:gap-20">
+          <div class="flex min-w-40 md:min-w-60">
+            <h4 class="text-lg leading-6 sm:pt-0.5">
+              Colchester School of Art
+            </h4>
+          </div>
+          <div class="max-w-md text-base text-pretty">
+            <p>(BTech) Foundation Studies in Art & Design</p>
+          </div>
         </div>
       </section>
     </div>

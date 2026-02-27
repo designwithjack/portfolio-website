@@ -34,7 +34,7 @@ const variantClasses = computed(() => {
       return "text-slate-100 bg-transparent hover:bg-slate-900/40";
     case "secondary":
     default:
-      return "text-white bg-neutral-700/70 hover:bg-neutral-700";
+      return "text-white bg-neutral-800 hover:bg-neutral-700";
   }
 });
 </script>
