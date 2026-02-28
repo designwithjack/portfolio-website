@@ -124,11 +124,11 @@
                 dates="Oct 2013 — Nov 2013"
               >
                 <p>
-                  Designing physical experiences for the launch of a series of
-                  fun, interactive exhibits that explored the future of energy,
-                  I also mentored and line managed junior designers while
-                  providing creative direction to freelancers working across AV,
-                  interactive, and VR experiences.
+                  Working within the wealth management and private banking
+                  space, I contributed to a conceptual design phase exploring
+                  premium customer support features for a high-net-worth client
+                  service, and supported a website redesign for a private bank
+                  centred on modern simplicity.
                 </p>
               </ExperienceItem>
               <ExperienceItem
