@@ -44,6 +44,21 @@
   --breakpoint-xs: 30rem; /* 480px */
 }
 
+/* Motion tokens — shared duration and easing (used by CSS and motion lib) */
+@layer base {
+  :root {
+    --motion-duration: 250ms;
+    --motion-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+    --motion-stagger: 80ms;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    :root {
+      --motion-duration: 0ms;
+      --motion-stagger: 0ms;
+    }
+  }
+}
+
 /* Base resets */
 @layer base {
   html,

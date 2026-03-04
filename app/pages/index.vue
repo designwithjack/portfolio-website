@@ -5,22 +5,26 @@
       <section
         class="xs:text-4xl xs:leading-11 max-w-2xl text-3xl leading-9 font-light text-balance"
       >
-        <p class="text-muted pb-3">Hello, I'm Jack</p>
-        <p>
-          A product designer who loves transforming complex problems into
-          simple, user-friendly experiences. Naturally curious and with a keen
-          eye for detail, I work with teams to craft thoughtful and refined
-          interfaces.
-        </p>
+        <div v-motion="staggerConfig(0)">
+          <p class="text-muted pb-3">Hello, I'm Jack</p>
+          <p>
+            A product designer who loves transforming complex problems into
+            simple, user-friendly experiences. Naturally curious and with a keen
+            eye for detail, I work with teams to craft thoughtful and refined
+            interfaces.
+          </p>
+        </div>
       </section>
       <section class="pt-[7.5vw]">
         <h2
+          v-motion="staggerConfig(1)"
           class="mt-5 mb-2.5 text-sm font-medium tracking-[0.105em] uppercase opacity-70"
         >
           Experience
         </h2>
 
         <div id="experience-content" class="relative">
+          <div v-motion="staggerConfig(2)">
           <ExperienceItem
             company="Speckle"
             role="Product Designer"
@@ -37,6 +41,8 @@
               app, and marketing website.
             </p>
           </ExperienceItem>
+          </div>
+          <div v-motion="staggerConfig(3)">
           <ExperienceItem
             company="McKinsey & Company"
             role="Staff Product Designer"
@@ -51,6 +57,8 @@
               through candidate interviews.
             </p>
           </ExperienceItem>
+          </div>
+          <div v-motion="staggerConfig(4)">
           <ExperienceItem
             company="ghSmart"
             role="Fractional Principal Product Designer"
@@ -65,6 +73,7 @@
               the platform accessible to clients.
             </p>
           </ExperienceItem>
+          </div>
           <ExperienceItem
             company="Sennep"
             role="Senior Product Designer"
@@ -210,7 +219,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
-
 const showAllExperience = ref(false);
+const { staggerConfig } = useStaggerMotion();
 </script>

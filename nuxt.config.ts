@@ -11,7 +11,43 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxt/eslint',
+    '@vueuse/motion/nuxt',
   ],
+
+  runtimeConfig: {
+    public: {
+      motion: {
+        directives: {
+          'fade-blur-in': {
+            initial: { opacity: 0.7, filter: 'blur(6px)' },
+            visible: {
+              opacity: 1,
+              filter: 'blur(0px)',
+              transition: { duration: 250, ease: [0.2, 0.8, 0.2, 1] },
+            },
+            visibleOnce: {
+              opacity: 1,
+              filter: 'blur(0px)',
+              transition: { duration: 250, ease: [0.2, 0.8, 0.2, 1] },
+            },
+          },
+          'fade-up': {
+            initial: { opacity: 0, y: 12 },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: { duration: 250, ease: [0.2, 0.8, 0.2, 1] },
+            },
+            visibleOnce: {
+              opacity: 1,
+              y: 0,
+              transition: { duration: 250, ease: [0.2, 0.8, 0.2, 1] },
+            },
+          },
+        },
+      },
+    },
+  },
 
   css: [
     '~/assets/css/main.css',
@@ -23,7 +59,28 @@ export default defineNuxtConfig({
     ],
   },
 
+  app: {
+    head: {
+      link: [
+        {
+          rel: 'preload',
+          href: '/fonts/Moderat-Regular.woff2',
+          as: 'font',
+          type: 'font/woff2',
+          crossorigin: 'anonymous',
+        },
+      ],
+    },
+  },
+
   routeRules: {
-    '/**': { prerender: true },
+    '/**': {
+      prerender: true,
+      headers: {
+        'X-Frame-Options': 'DENY',
+        'X-Content-Type-Options': 'nosniff',
+        'Referrer-Policy': 'strict-origin-when-cross-origin',
+      },
+    },
   },
 })

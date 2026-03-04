@@ -1,7 +1,7 @@
 <template>
   <button
     :type="type"
-    class="inline-flex cursor-pointer items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+    class="btn-press inline-flex cursor-pointer items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
     :class="variantClasses"
     v-bind="$attrs"
   >
@@ -10,8 +10,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from "vue";
-
 type ButtonVariant = "primary" | "secondary" | "outline" | "ghost";
 
 interface Props {
@@ -27,14 +25,35 @@ const props = withDefaults(defineProps<Props>(), {
 const variantClasses = computed(() => {
   switch (props.variant) {
     case "primary":
-      return "bg-slate-100 text-slate-900 hover:bg-slate-200";
+      return "bg-background border border-border text-foreground hover:opacity-90";
     case "outline":
-      return "border border-slate-600 text-slate-100 bg-transparent hover:bg-slate-900/40";
+      return "border border-border text-foreground bg-transparent hover:bg-muted/20";
     case "ghost":
-      return "text-slate-100 bg-transparent hover:bg-slate-900/40";
+      return "text-foreground bg-transparent hover:bg-muted/20";
     case "secondary":
     default:
-      return "text-white bg-neutral-800 hover:bg-neutral-700";
+      return "bg-foreground text-background hover:opacity-90";
   }
 });
 </script>
+
+<style scoped>
+.btn-press {
+  transition:
+    opacity var(--motion-duration) var(--motion-ease),
+    transform var(--motion-duration) var(--motion-ease);
+}
+.btn-press:active {
+  opacity: 0.9;
+  transform: scale(0.98);
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-press {
+    transition-duration: 0s;
+  }
+  .btn-press:active {
+    opacity: unset;
+    transform: none;
+  }
+}
+</style>
