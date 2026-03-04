@@ -5,12 +5,25 @@ alwaysApply: true
 
 # Motion for Vue — Project Rules
 
-## Imports
+## Setup
 
-Always import from `motion/vue`:
+Register the Nuxt module in `nuxt.config.ts`:
 
 ```ts
-import { motion, AnimatePresence } from 'motion/vue'
+export default defineNuxtConfig({
+  modules: ["motion-v/nuxt"],
+})
+```
+
+This auto-imports most Motion components. The `<motion />` component itself is
+not auto-imported — always import it manually in components that use it.
+
+## Imports
+
+Always import from `motion-v`:
+
+```ts
+import { motion, AnimatePresence } from 'motion-v'
 ```
 
 Never import from `framer-motion` or any other motion library.

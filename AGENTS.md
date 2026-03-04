@@ -17,7 +17,7 @@ and clarity matter as much as correctness.
 - `lucide-vue-next` is installed for icons — always use this for any icon needs,
   never suggest an alternative icon library
 - `@nuxt/content` for case study pages (markdown + frontmatter)
-- Motion for Vue (`motion/vue`) for all animations and transitions
+- Motion for Vue (`motion-v`) for all animations and transitions
 - No UI component library
 
 ## Package manager
@@ -85,7 +85,7 @@ useSeoMeta({
 
 ## Motion and animation
 
-- Use Motion for Vue for all animation — import from `motion/vue`
+- Use Motion for Vue for all animation — import from `motion-v`
 - Do not use CSS keyframes, CSS transitions, or any other animation library
 - Always use the shared `useReducedMotion` composable to gate animations.
   Never write the `prefers-reduced-motion` conditional inline

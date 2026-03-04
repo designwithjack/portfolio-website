@@ -16,6 +16,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
     "lucide-vue-next": "^0.563.0",
+    "motion-v": "^2.0.0",
     "nuxt": "^3.21.1",
     "tailwindcss": "^4.1.18",
     "vue": "latest"
