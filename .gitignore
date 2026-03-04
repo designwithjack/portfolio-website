@@ -5,6 +5,11 @@
 .nitro
 .cache
 dist
+*.tsbuildinfo
+
+# pnpm
+.pnpm-debug.log
+.pnpm-store
 
 # Node dependencies
 node_modules
