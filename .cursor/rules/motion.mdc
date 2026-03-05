@@ -136,14 +136,30 @@ Avoid stagger values above 0.1s — lists feel sluggish on repeat visits.
 
 ## Scroll animations
 
-Use `whileInView` for scroll-triggered reveals. Always set `once: true` for
-content that should only animate in once:
+Use `whileInView` for scroll-triggered reveals. motion-v expects
+`inViewOptions` (not `viewport`) for the observer config. Always set
+`once: true` for content that should only animate in once.
+
+**Project convention:** Use the shared `useScrollReveal` composable and the
+`<ScrollReveal>` component for the standard opacity + blur scroll-reveal. That
+keeps config in one place and avoids repeating the same four props. Use
+`<ScrollReveal>` (default div) or `<ScrollReveal as="h2">` with optional
+`class`; use `<motion.*>` directly when you need different animation config or
+motion-only props (e.g. layoutId).
+
+```html
+<ScrollReveal>...</ScrollReveal>
+<ScrollReveal as="h2" class="...">Section title</ScrollReveal>
+```
+
+For one-off or custom scroll reveals, use `<motion.div>` (etc.) with
+`inViewOptions`:
 
 ```html
 <motion.div
   :initial="{ opacity: 0, y: 20 }"
   :whileInView="{ opacity: 1, y: 0 }"
-  :viewport="{ once: true, margin: '-10%' }"
+  :in-view-options="{ once: true, amount: 0.3 }"
 />
 ```
 

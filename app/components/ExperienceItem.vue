@@ -1,5 +1,5 @@
 <template>
-  <div
+  <ScrollReveal
     class="border-border flex flex-col gap-3 border-b py-9 sm:flex-row sm:gap-16 md:gap-20"
   >
     <div class="flex min-w-40 md:min-w-60 flex-col">
@@ -16,11 +16,11 @@
     <div class="max-w-md text-base text-pretty">
       <slot />
     </div>
-  </div>
+  </ScrollReveal>
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{
+defineProps<{
   company: string;
   role: string;
   dates: string;

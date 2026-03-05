@@ -5,20 +5,23 @@
       <section
         class="xs:text-4xl xs:leading-11 max-w-2xl text-3xl leading-9 font-light text-balance"
       >
-        <p class="text-muted pb-3">Hello, I'm Jack</p>
-        <p>
-          A product designer who loves transforming complex problems into
-          simple, user-friendly experiences. Naturally curious and with a keen
-          eye for detail, I work with teams to craft thoughtful and refined
-          interfaces.
-        </p>
+        <ScrollReveal>
+          <p class="text-muted pb-3">Hello, I'm Jack</p>
+          <p>
+            A product designer who loves transforming complex problems into
+            simple, user-friendly experiences. Naturally curious and with a keen
+            eye for detail, I work with teams to craft thoughtful and refined
+            interfaces.
+          </p>
+        </ScrollReveal>
       </section>
       <section class="pt-[7.5vw]">
-        <h2
+        <ScrollReveal
+          as="h2"
           class="mt-5 mb-2.5 text-sm font-medium tracking-[0.105em] uppercase opacity-70"
         >
           Experience
-        </h2>
+        </ScrollReveal>
 
         <div id="experience-content" class="relative">
           <ExperienceItem
@@ -82,15 +85,14 @@
               philosophy.
             </p>
           </ExperienceItem>
-          <Transition
-            enter-active-class="transition duration-600 ease-out"
-            enter-from-class="opacity-0 "
-            enter-to-class="opacity-100 "
-            leave-active-class="transition duration-300 ease-in"
-            leave-from-class="opacity-100 "
-            leave-to-class="opacity-0 "
-          >
-            <div v-show="showAllExperience">
+          <AnimatePresence>
+            <motion.div
+              v-if="showAllExperience"
+              key="experience-expandable"
+              :initial="expandVariants.initial"
+              :animate="expandVariants.animate"
+              :exit="expandVariants.exit"
+            >
               <ExperienceItem
                 company="Elsewhen"
                 role="Senior Visual Designer"
@@ -146,7 +148,7 @@
                   digital context.
                 </p>
               </ExperienceItem>
-              <div
+              <ScrollReveal
                 class="flex flex-col gap-3 py-9 sm:flex-row sm:gap-16 md:gap-20"
               >
                 <div class="min-w-40 md:min-w-60">
@@ -157,9 +159,9 @@
                 <div class="max-w-md text-base text-pretty">
                   <p>LBi, JWT, Suburb, DLKW</p>
                 </div>
-              </div>
-            </div>
-          </Transition>
+              </ScrollReveal>
+            </motion.div>
+          </AnimatePresence>
 
           <div
             v-if="!showAllExperience"
@@ -171,46 +173,70 @@
           <Button
             variant="secondary"
             type="button"
+            class="absolute left-1/2 -translate-x-1/2 -translate-y-1/2"
             :aria-expanded="showAllExperience"
             aria-controls="experience-content"
             @click="showAllExperience = !showAllExperience"
-            class="absolute left-1/2 -translate-x-1/2 -translate-y-1/2"
           >
             {{ showAllExperience ? "Show less" : "Show more" }}
           </Button>
         </div>
       </section>
       <section class="pt-[7.5vw]">
-        <h2
+        <ScrollReveal
+          as="h2"
           class="mt-5 mb-2.5 text-sm font-medium tracking-[0.105em] uppercase opacity-70"
         >
           Education
-        </h2>
-        <div class="flex flex-col gap-3 pt-9 sm:flex-row sm:gap-16 md:gap-20">
-          <div class="flex min-w-40 md:min-w-60">
-            <h4 class="text-lg leading-6 sm:pt-0.5">Bournemouth University</h4>
+        </ScrollReveal>
+        <ScrollReveal>
+          <div class="flex flex-col gap-3 pt-9 sm:flex-row sm:gap-16 md:gap-20">
+            <div class="flex min-w-40 md:min-w-60">
+              <h4 class="text-lg leading-6 sm:pt-0.5">
+                Bournemouth University
+              </h4>
+            </div>
+            <div class="max-w-md text-base text-pretty">
+              <p>BA (Hons) Interactive Media Production</p>
+            </div>
           </div>
-          <div class="max-w-md text-base text-pretty">
-            <p>BA (Hons) Interactive Media Production</p>
+          <div class="flex flex-col gap-3 py-9 sm:flex-row sm:gap-16 md:gap-20">
+            <div class="flex min-w-40 md:min-w-60">
+              <h4 class="text-lg leading-6 sm:pt-0.5">
+                Colchester School of Art
+              </h4>
+            </div>
+            <div class="max-w-md text-base text-pretty">
+              <p>(BTech) Foundation Studies in Art & Design</p>
+            </div>
           </div>
-        </div>
-        <div class="flex flex-col gap-3 py-9 sm:flex-row sm:gap-16 md:gap-20">
-          <div class="flex min-w-40 md:min-w-60">
-            <h4 class="text-lg leading-6 sm:pt-0.5">
-              Colchester School of Art
-            </h4>
-          </div>
-          <div class="max-w-md text-base text-pretty">
-            <p>(BTech) Foundation Studies in Art & Design</p>
-          </div>
-        </div>
+        </ScrollReveal>
       </section>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, computed } from "vue";
+import { motion, AnimatePresence } from "motion-v";
+import { useReducedMotion } from "~/composables/useReducedMotion";
 
 const showAllExperience = ref(false);
+const { prefersReduced } = useReducedMotion();
+
+const expandVariants = computed(() => {
+  const short = prefersReduced.value ? 0.15 : 0.3;
+  const long = prefersReduced.value ? 0.15 : 0.6;
+  return {
+    initial: { opacity: 0 },
+    animate: {
+      opacity: 1,
+      transition: { duration: long, ease: "easeOut" as const },
+    },
+    exit: {
+      opacity: 0,
+      transition: { duration: short, ease: "easeIn" as const },
+    },
+  };
+});
 </script>
