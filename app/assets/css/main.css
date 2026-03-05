@@ -100,7 +100,7 @@
     position: absolute;
     inset-inline: 0;
     top: 100%;
-    height: 6rem; /* h-24 */
+    height: 8rem;
     pointer-events: none;
     background-image: linear-gradient(
       to bottom,

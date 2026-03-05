@@ -10,6 +10,34 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
 
+  app: {
+    head: {
+      link: [
+        {
+          rel: "preload",
+          href: "/fonts/Moderat-Light.woff2",
+          as: "font",
+          type: "font/woff2",
+          crossorigin: "anonymous",
+        },
+        {
+          rel: "preload",
+          href: "/fonts/Moderat-Regular.woff2",
+          as: "font",
+          type: "font/woff2",
+          crossorigin: "anonymous",
+        },
+        {
+          rel: "preload",
+          href: "/fonts/Moderat-Medium.woff2",
+          as: "font",
+          type: "font/woff2",
+          crossorigin: "anonymous",
+        },
+      ],
+    },
+  },
+
   css: ["~/assets/css/main.css"],
 
   vite: {

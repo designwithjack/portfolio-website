@@ -4,7 +4,7 @@
   >
     <div class="page-container flex h-12 items-center justify-between">
       <NuxtLink to="/" class="text-lg"> Jack Hughes </NuxtLink>
-      <nav class="flex items-center gap-8">
+      <nav v-if="navLinks.length" class="flex items-center gap-8">
         <NuxtLink
           v-for="link in navLinks"
           :key="link.href"
@@ -20,9 +20,6 @@
 </template>
 
 <script setup lang="ts">
-const navLinks = [
-  { label: "Work", href: "/work" },
-  { label: "Play", href: "/play" },
-  { label: "About", href: "/about" },
-];
+// Restore when /work, /play, /about pages exist
+const navLinks: { label: string; href: string }[] = [];
 </script>
