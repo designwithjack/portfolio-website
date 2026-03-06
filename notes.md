@@ -133,6 +133,32 @@ handles all items — there are no variant types needed.
 
 ---
 
+## Component patterns
+
+### Nav link active state — `useLink()` + `NavLink.vue`
+
+Active styling for header nav links (Work, Play, About) is handled by a
+reusable `NavLink` component that uses Vue Router's `useLink()` composable.
+We do **not** use NuxtLink's `active-class` or scoped CSS with `:deep()`.
+
+**Why `useLink()`:**
+
+- Mirrors RouterLink's internal matching logic, so behaviour is predictable
+  and future-proof.
+- `isActive` is true on exact match and child routes (e.g. `/work` stays
+  active on `/work/[slug]`), which is the right UX for top-level nav. Use
+  `isExactActive` only when you need exact-match-only (e.g. sidebar items).
+- One conditional class binding in the template — no reliance on CSS
+  inheritance, `active-class` vs `text-muted` cascade, or scoped overrides.
+
+**Implementation:** `components/NavLink.vue` accepts `to` and `label` props,
+calls `useLink({ to: computed(() => props.to) })`, and applies
+`text-foreground` when `isActive` is true and `text-muted hover:text-foreground`
+otherwise. `AppHeader` renders a list of `NavLink` instances; no active-state
+logic or special classes on the nav wrapper.
+
+---
+
 ## Cursor and AI workflow decisions
 
 ### Compound Engineer — removed

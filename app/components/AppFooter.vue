@@ -5,7 +5,7 @@
     <div
       class="page-container text-foreground flex items-end justify-between gap-10 text-base"
     >
-      <div class="flex flex-col gap-5 sm:gap-11 sm:flex-row">
+      <div class="flex flex-col gap-5 sm:gap-12 sm:flex-row">
         <a
           href="mailto:hello@designwithjack.com?subject=Chat%20with%20Jack"
           target="_blank"

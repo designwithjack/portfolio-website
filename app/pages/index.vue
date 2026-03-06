@@ -219,10 +219,10 @@
 <script setup lang="ts">
 import { ref, computed } from "vue";
 import { motion, AnimatePresence } from "motion-v";
-import { useReducedMotion } from "~/composables/useReducedMotion";
+import { usePrefersReducedMotion } from "~/composables/usePrefersReducedMotion";
 
 const showAllExperience = ref(false);
-const { prefersReduced } = useReducedMotion();
+const { prefersReduced } = usePrefersReducedMotion();
 
 const expandVariants = computed(() => {
   const short = prefersReduced.value ? 0.15 : 0.3;
