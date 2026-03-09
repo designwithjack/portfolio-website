@@ -3,7 +3,7 @@
   <div class="page-content">
     <div class="page-container pt-40 lg:pt-54 pb-24">
       <section
-        class="xs:text-4xl xs:leading-11 max-w-2xl text-3xl leading-9 font-light text-balance"
+        class="xs:text-4xl xs:leading-11 max-w-[40ch] text-3xl leading-9 font-light text-balance"
       >
         <ScrollReveal>
           <p class="text-muted pb-3">Hello, I'm Jack</p>
@@ -15,10 +15,10 @@
           </p>
         </ScrollReveal>
       </section>
-      <section class="pt-[7.5vw]">
+      <section class="pt-[6vw]">
         <ScrollReveal
           as="h2"
-          class="mt-5 mb-2.5 text-sm font-medium tracking-[0.105em] uppercase opacity-70"
+          class="mt-5 mb-2.5 text-sm font-medium tracking-[0.105em] uppercase text-muted"
         >
           Experience
         </ScrollReveal>
@@ -149,7 +149,7 @@
                 </p>
               </ExperienceItem>
               <ScrollReveal
-                class="flex flex-col gap-3 py-9 sm:flex-row sm:gap-16 md:gap-20"
+                class="flex flex-col gap-3 py-9 sm:flex-row sm:gap-16 md:gap-20 xl:gap-28"
               >
                 <div class="min-w-40 md:min-w-60">
                   <h4 class="text-base leading-5 sm:pt-0.5">
@@ -165,7 +165,7 @@
 
           <div
             v-if="!showAllExperience"
-            class="pointer-events-none absolute inset-x-0 bottom-0 h-22 bg-linear-to-t from-black to-transparent"
+            class="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-linear-to-t from-black to-transparent"
           ></div>
         </div>
 
@@ -182,15 +182,17 @@
           </Button>
         </div>
       </section>
-      <section class="pt-[7.5vw]">
+      <section class="pt-[6vw]">
         <ScrollReveal
           as="h2"
-          class="mt-5 mb-2.5 text-sm font-medium tracking-[0.105em] uppercase opacity-70"
+          class="mt-5 mb-2.5 text-sm font-medium tracking-[0.105em] uppercase text-muted"
         >
           Education
         </ScrollReveal>
         <ScrollReveal>
-          <div class="flex flex-col gap-3 pt-9 sm:flex-row sm:gap-16 md:gap-20">
+          <div
+            class="flex flex-col gap-3 pt-9 sm:flex-row sm:gap-16 md:gap-20 xl:gap-28"
+          >
             <div class="flex min-w-40 md:min-w-60">
               <h4 class="text-lg leading-6 sm:pt-0.5">
                 Bournemouth University
@@ -200,7 +202,9 @@
               <p>BA (Hons) Interactive Media Production</p>
             </div>
           </div>
-          <div class="flex flex-col gap-3 py-9 sm:flex-row sm:gap-16 md:gap-20">
+          <div
+            class="flex flex-col gap-3 py-9 sm:flex-row sm:gap-16 md:gap-20 xl:gap-28"
+          >
             <div class="flex min-w-40 md:min-w-60">
               <h4 class="text-lg leading-6 sm:pt-0.5">
                 Colchester School of Art

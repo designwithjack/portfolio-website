@@ -49,11 +49,13 @@
   html,
   body {
     font-family: var(--font-sans);
-    background-color: var(--color-background);
     color: var(--color-foreground);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overscroll-behavior: none;
+  }
+  body {
+    background-color: var(--color-background);
   }
 }
 
@@ -100,12 +102,22 @@
     position: absolute;
     inset-inline: 0;
     top: 100%;
-    height: 8rem;
+    height: 6rem;
     pointer-events: none;
-    background-image: linear-gradient(
+    background-color: var(--color-background);
+    mask-image: linear-gradient(
       to bottom,
-      var(--color-background),
-      transparent
+      black 0%,
+
+      /* Hold opacity higher for longer */ rgba(0, 0, 0, 0.1) 84%,
+      /* Gradual middle transition */ transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      black 0%,
+
+      rgba(0, 0, 0, 0.1) 84%,
+      transparent 100%
     );
   }
 }

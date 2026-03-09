@@ -14,6 +14,7 @@
         <ScrollReveal>
           <ProjectCard
             image="/images/avatar.png"
+            title="Example project"
             description="Example project"
             alt="Example work project"
             :image-left="true"
@@ -28,6 +29,7 @@
         <ScrollReveal>
           <ProjectCard
             image="/images/avatar.png"
+            title="Another case study"
             description="Another case study"
             alt="Another case study"
             :image-left="false"

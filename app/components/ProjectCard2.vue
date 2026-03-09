@@ -2,7 +2,7 @@
   <component
     :is="rootTag"
     v-bind="rootAttrs"
-    class="flex flex-col md:flex-row bg-background"
+    class="grid grid-cols-1 md:grid-cols-10 bg-background gap-6 md:gap-12 lg:gap-14 xl:gap-24"
   >
     <!-- initial="initial" seeds the variant name for the whole tree.
          while-hover/while-press then switch that name, and all child
@@ -15,12 +15,8 @@
       while-press="press"
     >
       <div
-        class="bg-neutral-800 overflow-hidden rounded-[10px] w-full md:w-1/2 aspect-video min-w-0 max-h-fit"
-        :class="
-          imageLeft
-            ? 'md:order-1 md:mr-10 xl:mr-16'
-            : 'md:order-2 md:ml-10 xl:ml-16'
-        "
+        class="bg-neutral-800 overflow-hidden rounded-[10px] md:col-span-6 aspect-video min-w-0 max-h-fit"
+        :class="imageLeft ? 'md:order-1 ' : 'md:order-2 '"
       >
         <motion.img
           :src="image"
@@ -33,19 +29,17 @@
         />
       </div>
       <motion.div
-        class="w-full md:w-1/2 flex flex-col justify-center min-h-full gap-1 lg:gap-2 pt-8 md:pt-0"
-        :class="
-          imageLeft
-            ? 'md:order-2 md:pl-2 lg:pl-6 xl:pl-8'
-            : 'md:order-1 md:pr-2 lg:pr-6 xl:pr-8'
-        "
+        class="w-full md:col-span-4 flex flex-col justify-center min-h-full gap-1 lg:gap-2"
+        :class="imageLeft ? 'md:order-2 ' : 'md:order-1 '"
         :variants="passThroughVariants"
       >
         <motion.div
           class="flex h-10 items-center flex-row gap-4"
           :variants="passThroughVariants"
         >
-          <h2 class="text-lg xs:text-xl font-light text-foreground">
+          <h2
+            class="text-lg xs:text-xl md:text-lg lg:text-xl font-light text-foreground"
+          >
             {{ title }}
           </h2>
           <!-- No local initial= override here — let the parent's variant
@@ -61,7 +55,7 @@
           </motion.div>
         </motion.div>
         <p
-          class="text-2xl xs:text-3xl lg:text-4xl leading-10 lg:leading-11 text-balance font-light text-foreground pb-2 lg:pb-4 xl:pb-5"
+          class="text-2xl xs:text-3xl md:text-[28px] lg:text-4xl xs:leading-10 md:leading-9 lg:leading-11 text-balance font-light text-foreground pb-2 lg:pb-4 xl:pb-5"
         >
           {{ description }}
         </p>
@@ -106,13 +100,18 @@ const rootAttrs = computed(() => {
 });
 
 // Image scales up on hover, down on press
+// The "stiffness" value for spring transitions in Motion for Vue (same as framer-motion) typically ranges from ~50 (very soft, pronounced bounce) to ~1000 (very stiff, almost no bounce).
+// A low stiffness (50–150) with moderate damping produces a very subtle, gentle bounce.
+// Here, for a subtle feel, we use stiffness: 90 and damping: 20.
 const imageVariants = computed(() => ({
   initial: { scale: 1.02 },
   hover: {
     scale: props.href && !prefersReduced.value ? 1.04 : 1.02,
+    transition: { type: "spring", stiffness: 350, damping: 20 } as const,
   },
   press: {
     scale: props.href && !prefersReduced.value ? 1 : 1.02,
+    transition: { type: "spring", stiffness: 350, damping: 20 } as const,
   },
 }));
 
