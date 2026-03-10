@@ -15,7 +15,7 @@
         </ScrollReveal>
       </section>
 
-      <section class="pt-[6vw] flex flex-col gap-20 md:gap-32">
+      <section class="pt-[7vw] flex flex-col gap-20 md:gap-32">
         <ScrollReveal>
           <ProjectCard2
             image="/images/projects/the-colour-clock.png"

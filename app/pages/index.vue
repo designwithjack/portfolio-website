@@ -15,7 +15,7 @@
           </p>
         </ScrollReveal>
       </section>
-      <section class="pt-[6vw]">
+      <section class="pt-[7vw]">
         <ScrollReveal
           as="h2"
           class="mt-5 mb-2.5 text-sm font-medium tracking-[0.105em] uppercase text-muted"

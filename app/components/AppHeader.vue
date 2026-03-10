@@ -4,7 +4,7 @@
   >
     <div class="page-container flex h-12 items-center justify-between">
       <NuxtLink to="/" class="text-lg"> Jack Hughes </NuxtLink>
-      <nav v-if="navLinks.length" class="flex items-center gap-8">
+      <nav v-if="navLinks.length" class="flex items-center gap-3">
         <NavLink
           v-for="link in navLinks"
           :key="link.href"
@@ -20,6 +20,5 @@
 const navLinks: { label: string; href: string }[] = [
   { label: "Work", href: "/work" },
   { label: "Play", href: "/play" },
-  { label: "About", href: "/about" },
 ];
 </script>
