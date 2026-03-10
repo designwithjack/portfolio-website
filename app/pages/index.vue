@@ -225,6 +225,17 @@ import { ref, computed } from "vue";
 import { motion, AnimatePresence } from "motion-v";
 import { usePrefersReducedMotion } from "~/composables/usePrefersReducedMotion";
 
+useSeoMeta({
+  title: "Jack Hughes. Digital Product Designer.",
+  description:
+    "Digital product designer specialising in thoughtful, end-to-end experiences across complex, technical domains.",
+  ogTitle: "Jack Hughes. Digital Product Designer.",
+  ogDescription:
+    "Digital product designer specialising in thoughtful, end-to-end experiences across complex, technical domains.",
+  ogImage: "/images/og-default.png",
+  twitterCard: "summary_large_image",
+});
+
 const showAllExperience = ref(false);
 const { prefersReduced } = usePrefersReducedMotion();
 

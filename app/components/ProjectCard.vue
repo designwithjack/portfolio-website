@@ -2,11 +2,8 @@
   <component
     :is="rootTag"
     v-bind="rootAttrs"
-    class="flex flex-col md:flex-row bg-background"
+    class="grid grid-cols-1 md:grid-cols-10 bg-background gap-6 md:gap-10 lg:gap-14 xl:gap-16 2xl:gap-20"
   >
-    <!-- initial="initial" seeds the variant name for the whole tree.
-         while-hover/while-press then switch that name, and all child
-         motion elements with matching variant keys respond automatically. -->
     <motion.div
       class="contents"
       :variants="passThroughVariants"
@@ -15,12 +12,8 @@
       while-press="press"
     >
       <div
-        class="bg-neutral-800 overflow-hidden rounded-[10px] w-full md:w-1/2 aspect-video min-w-0 max-h-fit"
-        :class="
-          imageLeft
-            ? 'md:order-1 md:mr-10 xl:mr-16'
-            : 'md:order-2 md:ml-10 xl:ml-16'
-        "
+        class="bg-neutral-800 overflow-hidden rounded-lg sm:rounded-xl md:col-span-6 aspect-video min-w-0 max-h-fit"
+        :class="imageLeft ? 'md:order-1 ' : 'md:order-2 '"
       >
         <motion.img
           :src="image"
@@ -33,24 +26,20 @@
         />
       </div>
       <motion.div
-        class="w-full md:w-1/2 flex flex-col justify-center min-h-full gap-1 lg:gap-2 pt-8 md:pt-0"
-        :class="
-          imageLeft
-            ? 'md:order-2 md:pl-2 lg:pl-6 xl:pl-8'
-            : 'md:order-1 md:pr-2 lg:pr-6 xl:pr-8'
-        "
+        class="w-full md:col-span-4 flex flex-col justify-center min-h-full gap-1 lg:gap-2 xl:gap-3"
+        :class="imageLeft ? 'md:order-2 ' : 'md:order-1 '"
         :variants="passThroughVariants"
       >
         <motion.div
-          class="flex h-10 items-center flex-row gap-4"
+          class="flex min-h-10 items-center flex-row gap-4"
           :variants="passThroughVariants"
         >
-          <h2 class="text-lg xs:text-xl font-light text-foreground">
+          <h2
+            class="text-lg leading-6 xs:text-xl md:text-lg lg:text-xl font-light text-foreground"
+          >
             {{ title }}
           </h2>
-          <!-- No local initial= override here — let the parent's variant
-               propagation control state. Setting initial directly would
-               isolate this node from the parent hover signal. -->
+
           <motion.div :variants="iconVariants">
             <arrow-right
               :size="24"
@@ -61,7 +50,7 @@
           </motion.div>
         </motion.div>
         <p
-          class="text-2xl xs:text-3xl lg:text-4xl leading-10 lg:leading-11 text-balance font-light text-foreground pb-2 lg:pb-4 xl:pb-5"
+          class="text-3xl md:text-[28px] lg:text-4xl xl:text-[45px] leading-10 md:leading-9 lg:leading-11 xl:leading-[54px] xl:tracking-[-0.005em] text-balance text-foreground pb-2 lg:pb-5"
         >
           {{ description }}
         </p>
@@ -105,37 +94,29 @@ const rootAttrs = computed(() => {
   };
 });
 
-// Image scales up on hover, down on press
 const imageVariants = computed(() => ({
   initial: { scale: 1.02 },
   hover: {
     scale: props.href && !prefersReduced.value ? 1.04 : 1.02,
+    transition: { type: "spring", stiffness: 350, damping: 20 } as const,
   },
   press: {
     scale: props.href && !prefersReduced.value ? 1 : 1.02,
+    transition: { type: "spring", stiffness: 350, damping: 20 } as const,
   },
 }));
 
-// Icon visibility and animation depends on three cases:
-//   1. No href     → always hidden (opacity 0), no animation
-//   2. href + motion enabled → hidden at rest, slides in on hover
-//   3. href + reduced motion → always visible, no positional offset
 const iconVariants = computed(() => ({
   initial: {
-    // Case 2: start hidden and offset left, ready to animate in
-    // Case 3: start visible, no offset (will not animate)
-    // Case 1: start hidden, stays hidden
     opacity: props.href && !prefersReduced.value ? 0 : props.href ? 1 : 0,
     x: props.href && !prefersReduced.value ? -8 : 0,
   },
   hover: {
-    // Reveal the icon only if there's a link — otherwise keep it invisible
     opacity: props.href ? 1 : 0,
     x: 0,
     transition: { type: "spring", stiffness: 400, damping: 25 } as const,
   },
   press: {
-    // Hold the revealed state during press (same as hover)
     opacity: props.href ? 1 : 0,
     x: 0,
   },

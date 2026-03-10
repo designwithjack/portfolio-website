@@ -17,7 +17,7 @@
 
       <section class="pt-[7vw] flex flex-col gap-20 md:gap-32">
         <ScrollReveal>
-          <ProjectCard2
+          <ProjectCard
             image="/images/projects/the-colour-clock.png"
             title="The Colour Clock"
             description="Experimental clock that transforms time into the hexadecimal colour system"
@@ -26,10 +26,10 @@
             :image-left="true"
             open-in-new-tab
           >
-          </ProjectCard2>
+          </ProjectCard>
         </ScrollReveal>
         <ScrollReveal>
-          <ProjectCard2
+          <ProjectCard
             image="/images/projects/rototime.png"
             title="R O T O T I M E"
             description="Mixing digital display with analogue motion in homage to the Nixon Rotolog"
@@ -38,10 +38,10 @@
             :image-left="false"
             open-in-new-tab
           >
-          </ProjectCard2>
+          </ProjectCard>
         </ScrollReveal>
         <ScrollReveal>
-          <ProjectCard2
+          <ProjectCard
             image="/images/projects/edible-flower-alphabet.png"
             title="Edible A–Z of Flowers"
             description="Recipes and growing tips to showcase a beautifully illustrated alphabet of edible flowers"
@@ -50,11 +50,11 @@
             href="https://www.edibleflowersalphabet.com/"
             open-in-new-tab
           >
-          </ProjectCard2>
+          </ProjectCard>
         </ScrollReveal>
 
         <ScrollReveal>
-          <ProjectCard2
+          <ProjectCard
             image="/images/projects/length-of-a-minute.png"
             title="Length of a minute"
             description="For when you feel like time is dragging on, watch the minutes get longer by the second"
@@ -63,7 +63,7 @@
             :image-left="false"
             open-in-new-tab
           >
-          </ProjectCard2>
+          </ProjectCard>
         </ScrollReveal>
       </section>
     </div>
@@ -74,5 +74,9 @@
 useSeoMeta({
   title: "Play — Jack Hughes",
   description: "Personal and experimental projects.",
+  ogTitle: "Play — Jack Hughes",
+  ogDescription: "Personal and experimental projects.",
+  ogImage: "/images/og-default.png",
+  twitterCard: "summary_large_image",
 });
 </script>

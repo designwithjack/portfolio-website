@@ -15,6 +15,7 @@
             lead designer.
           </p>
           <Button
+            class="mb-12"
             variant="primary"
             size="lg"
             href="mailto:hello@designwithjack.com?subject=Chat%20with%20Jack"
@@ -26,7 +27,7 @@
 
       <section class="pt-[7vw] flex flex-col gap-20 md:gap-32">
         <ScrollReveal>
-          <ProjectCard2
+          <ProjectCard
             image="/images/projects/ghsmart.png"
             title="Leadership Development Platform"
             description="Define and assess the success of key hires and leaders"
@@ -41,10 +42,10 @@
               </p>
               <p>ghSmart</p>
             </div>
-          </ProjectCard2>
+          </ProjectCard>
         </ScrollReveal>
         <ScrollReveal>
-          <ProjectCard2
+          <ProjectCard
             image="/images/projects/msa.png"
             title="Marketing Spend Advisor"
             description="Analysing industry insights to optimise marketing budgets"
@@ -59,10 +60,10 @@
               </p>
               <p>Growth, Marketing & Sales</p>
             </div>
-          </ProjectCard2>
+          </ProjectCard>
         </ScrollReveal>
         <ScrollReveal>
-          <ProjectCard2
+          <ProjectCard
             image="/images/projects/cxa.png"
             title="Customer Experience Accelerator"
             description="Improving customer journeys that create the most value"
@@ -77,10 +78,10 @@
               </p>
               <p>Customer Experience</p>
             </div>
-          </ProjectCard2>
+          </ProjectCard>
         </ScrollReveal>
         <ScrollReveal>
-          <ProjectCard2
+          <ProjectCard
             image="/images/projects/prizm.png"
             title="Prizm Design System"
             description="Harmonising design across global teams and enterprise tools"
@@ -95,10 +96,10 @@
               </p>
               <p>Periscope</p>
             </div>
-          </ProjectCard2>
+          </ProjectCard>
         </ScrollReveal>
         <ScrollReveal>
-          <ProjectCard2
+          <ProjectCard
             image="/images/projects/promo.png"
             title="Promotion Advisor"
             description="Collaborative plans and forecasts for retailer promotions"
@@ -113,7 +114,7 @@
               </p>
               <p>Periscope</p>
             </div>
-          </ProjectCard2>
+          </ProjectCard>
         </ScrollReveal>
       </section>
     </div>
@@ -122,7 +123,13 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: "Play — Jack Hughes",
-  description: "Personal and experimental projects.",
+  title: "Work — Jack Hughes",
+  description:
+    "Selected work from complex, technical domains in B2B SaaS, with a focus on thoughtful, business-aligned design craft.",
+  ogTitle: "Work — Jack Hughes",
+  ogDescription:
+    "Selected work from complex, technical domains in B2B SaaS, with a focus on thoughtful, business-aligned design craft.",
+  ogImage: "/images/og-default.png",
+  twitterCard: "summary_large_image",
 });
 </script>
