@@ -1,116 +1,48 @@
 ---
-description: Nuxt 3 and Vue 3 conventions, patterns, and best practices
-alwaysApply: true
+description: Nuxt 3 and Vue 3 project-specific conventions
+globs: ["**/*.vue", "**/*.ts", "**/*.js"]
+alwaysApply: false
 ---
 
 # Nuxt 3 + Vue 3 — Project Rules
 
-## Auto-imports
-
-Nuxt 3 auto-imports the following — never import them manually:
-- Vue primitives: `ref`, `reactive`, `computed`, `watch`, `watchEffect`,
-  `onMounted`, `onUnmounted`, and all other Composition API utilities
-- Nuxt composables: `useRouter`, `useRoute`, `useState`, `useFetch`,
-  `useAsyncData`, `useHead`, `useSeoMeta`, `useRuntimeConfig`,
-  `navigateTo`, `definePageMeta`
-- Components in `components/` and composables in `composables/` directories
-
-The exception is `motion` from `motion-v` — this is not auto-imported and
-must always be imported manually.
-
 ## Code style
 
-- Functional and declarative patterns throughout — avoid classes
-- DRY principle: prefer iteration and modularisation over duplication
+- Functional and declarative patterns — avoid classes
 - Composition API with `<script setup>` only — never Options API
-- Descriptive variable names with auxiliary verbs: `isLoading`, `hasError`,
-  `isVisible`, `hasContent`
+- Descriptive variable names with auxiliary verbs: `isLoading`, `hasError`, `isVisible`, `hasContent`
+- Named exports for composables and utilities — default exports only for Vue components and Nuxt config
 
 ## Naming conventions
 
-- Components: PascalCase filenames (`components/WorkCard.vue`)
-- Composables: camelCase with `use` prefix (`composables/useWorkItems.ts`)
+- Components: PascalCase (`components/WorkCard.vue`)
+- Composables: camelCase with `use` prefix (`composables/usePrefersReducedMotion.ts`)
 - Pages: lowercase with dashes (`pages/about.vue`, `pages/work/[slug].vue`)
-- Named exports for composables and utilities — avoid default exports
-  except for Vue components and Nuxt config
 
-## Data fetching
+## Auto-imports
 
-Use `useFetch` for straightforward data fetching:
-```ts
-const { data, status } = await useFetch('/api/work')
-```
+Nuxt auto-imports Vue and Nuxt primitives — never import them manually.
 
-Use `useAsyncData` for complex cases — combining multiple calls, custom
-caching, or specific error handling:
-```ts
-const { data } = await useAsyncData('work-items', () => {
-  return Promise.all([fetchWork(), fetchPlay()])
-})
-```
-
-Set `server: false` to fetch only on the client side (bypasses SSR):
-```ts
-const { data } = await useFetch('/api/items', { server: false })
-```
-
-Set `lazy: true` to defer non-critical data fetching until after the
-initial render:
-```ts
-const { data } = await useFetch('/api/items', { lazy: true })
-```
-
-## SEO and metadata
-
-Every page must define metadata. Use `useSeoMeta` as the default:
-```ts
-useSeoMeta({
-  title: 'Page Title — designwithjack',
-  description: 'Page description.'
-})
-```
-
-Use `useHead` for anything beyond title and description (canonical URLs,
-Open Graph, structured data):
-```ts
-useHead({
-  link: [{ rel: 'canonical', href: 'https://designwithjack.com/work' }]
-})
-```
-
-Never hardcode `<title>` or `<meta>` tags in templates.
-
-## Images
-
-Use `<NuxtImage>` or `<NuxtPicture>` for all images. Requires
-`@nuxt/image` to be installed and added to modules. Benefits: automatic
-WebP conversion, lazy loading, responsive sizing. Never use a plain `<img>`
-tag for content images.
-
-## Routing
-
-- File-based routing in `pages/` — do not manually configure routes
-- Dynamic segments use bracket syntax: `pages/work/[slug].vue`
-- Use `definePageMeta` for page-level configuration:
-  ```ts
-  definePageMeta({
-    layout: 'default'
-  })
-  ```
-- Use `navigateTo()` for programmatic navigation inside composables
-  and middleware — use `<NuxtLink>` in templates
+Exception: `motion` from `motion-v` is not auto-imported and must always be imported manually.
 
 ## State management
 
-- Local component state: `ref` and `reactive`
-- SSR-safe shared state that survives hydration: `useState`
-- Do not reach for Pinia unless state complexity clearly justifies it —
-  it is not installed in this project
+- Local state: `ref` / `reactive`
+- SSR-safe shared state: `useState`
+- Pinia is not installed — do not reach for it
+
+## SEO
+
+- Every page must define metadata
+- Use `useSeoMeta` as the default; `useHead` for canonical URLs, Open Graph, structured data
+- Never hardcode `<title>` or `<meta>` tags in templates
+- Site title suffix: `— designwithjack`
+
+## Images
+
+Static images in `public/images/`, referenced with absolute paths. Use native `<img>` with `width`, `height`, `alt`, and `loading="lazy"`.
 
 ## Performance
 
-- Use `<Suspense>` for async components where appropriate
+- Avoid animating layout properties (height, width, padding, margin) — use transform-based alternatives
 - Lazy load heavy components with `defineAsyncComponent`
-- Prefer `<NuxtImage>` over `<img>` for automatic optimisation
-- Avoid animating layout properties (height, width, padding, margin) —
-  use transform-based alternatives

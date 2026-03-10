@@ -1,6 +1,10 @@
+import type { Ref } from "vue";
 import { ref, onMounted, onUnmounted } from "vue";
 
-export function useReducedMotion() {
+/**
+ * Prefers-reduced-motion preference. Named to avoid conflict with motion-v’s useReducedMotion.
+ */
+export function usePrefersReducedMotion(): { prefersReduced: Ref<boolean> } {
   const prefersReduced = ref(false);
   let mq: MediaQueryList | undefined;
   let handleChange: (e: MediaQueryListEvent) => void;

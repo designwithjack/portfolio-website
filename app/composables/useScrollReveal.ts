@@ -1,12 +1,12 @@
 import { computed } from "vue";
-import { useReducedMotion } from "~/composables/useReducedMotion";
+import { usePrefersReducedMotion } from "~/composables/usePrefersReducedMotion";
 
 /**
  * Shared scroll-reveal config for motion-v whileInView (opacity + blur).
  * Use with :initial, :while-in-view, :in-view-options, :transition on a motion component.
  */
 export function useScrollReveal() {
-  const { prefersReduced } = useReducedMotion();
+  const { prefersReduced } = usePrefersReducedMotion();
 
   const scrollReveal = computed(() => ({
     initial: { opacity: 0, filter: "blur(6px)" },
