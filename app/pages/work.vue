@@ -49,7 +49,7 @@
             image="/images/projects/ghsmart.png"
             title="Leadership Development Platform"
             description="Define and assess the success of key hires and leaders"
-            alt="Blurred screenshot of the ghSmart platform"
+            alt="Screenshot of the ghSmart platform"
             :image-left="false"
           >
             <div>
@@ -67,7 +67,7 @@
             image="/images/projects/msa.png"
             title="Marketing Spend Advisor"
             description="Analysing industry insights to optimise marketing budgets"
-            alt="Blurred screenshot of the Marketing Spend Advisor dashboard"
+            alt="Screenshot of the Marketing Spend Advisor dashboard"
             :image-left="true"
           >
             <div>
@@ -85,7 +85,7 @@
             image="/images/projects/cxa.png"
             title="Customer Experience Accelerator"
             description="Improving customer journeys that create the most value"
-            alt="Blurred screenshot from the Customer Experience Accelerator reports"
+            alt="Screenshot from the Customer Experience Accelerator reports"
             :image-left="false"
           >
             <div>
@@ -103,7 +103,7 @@
             image="/images/projects/prizm.png"
             title="Prizm Design System"
             description="Harmonising design across global teams and enterprise tools"
-            alt="Blurred screenshot from the design system documentation"
+            alt="Screenshot from the design system documentation"
             :image-left="true"
           >
             <div>
@@ -121,7 +121,7 @@
             image="/images/projects/promo.png"
             title="Promotion Advisor"
             description="Collaborative plans and forecasts for retailer promotions"
-            alt="Blurred screenshot from Promotion Advisor"
+            alt="Screenshot from Promotion Advisor"
             :image-left="false"
           >
             <div>

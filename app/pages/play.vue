@@ -33,7 +33,7 @@
             image="/images/projects/rototime.png"
             title="R O T O T I M E"
             description="Mixing digital display with analogue motion in homage to the Nixon Rotolog"
-            href="https://rototime.designwithjack.com/"
+            href="https://rototime.superhi.hosting"
             alt="Screenshot of R O T O T I M E"
             :image-left="false"
             open-in-new-tab
