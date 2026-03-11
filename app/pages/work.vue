@@ -28,11 +28,29 @@
       <section class="pt-[7vw] flex flex-col gap-20 md:gap-32">
         <ScrollReveal>
           <ProjectCard
+            image="/images/projects/speckle.png"
+            title="3D Design Reviews"
+            description="Collaborative design review features for architecture and engineering projects"
+            alt="Screenshot of the Speckle web app"
+            :image-left="true"
+          >
+            <div>
+              <p
+                class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
+              >
+                Company
+              </p>
+              <p>Speckle</p>
+            </div>
+          </ProjectCard>
+        </ScrollReveal>
+        <ScrollReveal>
+          <ProjectCard
             image="/images/projects/ghsmart.png"
             title="Leadership Development Platform"
             description="Define and assess the success of key hires and leaders"
             alt="Blurred screenshot of the ghSmart platform"
-            :image-left="true"
+            :image-left="false"
           >
             <div>
               <p
@@ -50,7 +68,7 @@
             title="Marketing Spend Advisor"
             description="Analysing industry insights to optimise marketing budgets"
             alt="Blurred screenshot of the Marketing Spend Advisor dashboard"
-            :image-left="false"
+            :image-left="true"
           >
             <div>
               <p
@@ -68,7 +86,7 @@
             title="Customer Experience Accelerator"
             description="Improving customer journeys that create the most value"
             alt="Blurred screenshot from the Customer Experience Accelerator reports"
-            :image-left="true"
+            :image-left="false"
           >
             <div>
               <p
@@ -86,7 +104,7 @@
             title="Prizm Design System"
             description="Harmonising design across global teams and enterprise tools"
             alt="Blurred screenshot from the design system documentation"
-            :image-left="false"
+            :image-left="true"
           >
             <div>
               <p
@@ -104,7 +122,7 @@
             title="Promotion Advisor"
             description="Collaborative plans and forecasts for retailer promotions"
             alt="Blurred screenshot from Promotion Advisor"
-            :image-left="true"
+            :image-left="false"
           >
             <div>
               <p
