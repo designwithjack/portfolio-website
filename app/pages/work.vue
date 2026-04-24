@@ -146,7 +146,7 @@
         </ScrollReveal>
         <ScrollReveal class="flex justify-center">
           <Button
-            class="mb-12"
+            class="mb-8"
             variant="primary"
             size="xl"
             href="mailto:hello@designwithjack.com?subject=Chat%20with%20Jack"
