@@ -144,9 +144,8 @@
             </div>
           </ProjectCard>
         </ScrollReveal>
-        <ScrollReveal class="flex justify-center">
+        <ScrollReveal class="flex justify-center my-6">
           <Button
-            class="mb-8"
             variant="primary"
             size="xl"
             href="mailto:hello@designwithjack.com?subject=Chat%20with%20Jack"
