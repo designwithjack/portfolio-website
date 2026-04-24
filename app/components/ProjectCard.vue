@@ -2,7 +2,7 @@
   <component
     :is="rootTag"
     v-bind="rootAttrs"
-    class="grid grid-cols-1 md:grid-cols-10 bg-background gap-6 md:gap-10 lg:gap-14 xl:gap-16 2xl:gap-20 mb-20 md:mb-32"
+    class="grid grid-cols-1 md:grid-cols-10 bg-background gap-8 xs:gap-10 lg:gap-13 xl:gap-16 2xl:gap-20 mb-20 md:mb-32 xl:mb-40"
   >
     <motion.div
       class="contents"
@@ -26,7 +26,7 @@
         />
       </div>
       <motion.div
-        class="w-full md:col-span-4 flex flex-col justify-center min-h-full gap-1 lg:gap-2 xl:gap-3"
+        class="w-full md:col-span-4 flex flex-col justify-center min-h-full gap-1 sm:gap-0 lg:gap-2 xl:gap-3"
         :class="imageLeft ? 'md:order-2 ' : 'md:order-1 '"
         :variants="passThroughVariants"
       >
@@ -50,7 +50,7 @@
           </motion.div>
         </motion.div>
         <p
-          class="text-3xl md:text-[28px] lg:text-4xl xl:text-[45px] leading-10 md:leading-9 lg:leading-11 xl:leading-[54px] xl:tracking-[-0.005em] text-balance text-foreground pb-2 lg:pb-5"
+          class="text-3xl md:text-[28px] lg:text-4xl xl:text-[45px] leading-10 md:leading-9 lg:leading-11 xl:leading-[54px] xl:tracking-[-0.005em] text-balance text-foreground pb-3 lg:pb-5"
         >
           {{ description }}
         </p>

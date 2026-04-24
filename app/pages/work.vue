@@ -6,7 +6,7 @@
       >
         <ScrollReveal>
           <h1 class="text-muted pb-8">Work</h1>
-          <p class="text-2xl max-w-[42ch] pr-3 mb-8 text-balance">
+          <p class="text-2xl max-w-[42ch] pr-3 mb-8 text-balance pb-4">
             Solving complex problems in technical domains is where I'm most at
             home, which makes B2B SaaS a natural fit. I care a lot about craft,
             though never at the expense of what users actually need or what the
@@ -17,10 +17,10 @@
         </ScrollReveal>
       </section>
 
-      <section class="pt-[5vw] flex flex-col">
+      <section class="pt-[4vw] flex flex-col">
         <ScrollReveal
           as="h2"
-          class="mt-5 mb-20 text-sm font-medium tracking-[0.105em] uppercase text-muted"
+          class="mt-5 mb-20 xl:mb-22 text-sm font-medium tracking-[0.105em] uppercase text-muted"
         >
           Latest case study
         </ScrollReveal>
@@ -46,10 +46,10 @@
         </ScrollReveal>
       </section>
       <hr class="border-border border-b mb-10" />
-      <section class="pt-[5vw] flex flex-col">
+      <section class="pt-[4vw] flex flex-col">
         <ScrollReveal
           as="h2"
-          class="mt-5 mb-20 text-sm font-medium tracking-[0.105em] uppercase text-muted"
+          class="mt-5 mb-20 xl:mb-22 text-sm font-medium tracking-[0.105em] uppercase text-muted"
         >
           Previous projects
         </ScrollReveal>

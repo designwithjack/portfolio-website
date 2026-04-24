@@ -3,14 +3,14 @@
     class="surface-light bg-background fixed inset-x-0 bottom-0 flex h-2/3 flex-col justify-end pb-10"
   >
     <div
-      class="page-container text-foreground flex items-end justify-between gap-10 text-base"
+      class="page-container text-foreground flex items-end justify-between gap-10 text-base px-1 xs:px-0"
     >
-      <div class="flex flex-col gap-5 sm:gap-12 sm:flex-row">
+      <div class="flex flex-col gap-4 sm:gap-12 sm:flex-row">
         <a
           href="mailto:hello@designwithjack.com?subject=Chat%20with%20Jack"
           target="_blank"
           rel="noopener noreferrer"
-          class="flex items-center gap-4 py-1.5 transition-opacity hover:opacity-60"
+          class="flex items-center gap-4 py-2 transition-opacity hover:opacity-60"
         >
           <img
             src="/images/email.svg"
@@ -23,7 +23,7 @@
           href="https://www.linkedin.com/in/jack-os"
           target="_blank"
           rel="noopener noreferrer"
-          class="flex items-center gap-4 py-1.5 transition-opacity hover:opacity-60"
+          class="flex items-center gap-4 py-2 transition-opacity hover:opacity-60"
         >
           <img
             src="/images/linkedin.svg"
@@ -37,7 +37,7 @@
           href="https://github.com/designwithjack"
           target="_blank"
           rel="noopener noreferrer"
-          class="flex items-center gap-4 py-1.5 transition-opacity hover:opacity-60"
+          class="flex items-center gap-4 py-2 transition-opacity hover:opacity-60"
         >
           <img
             src="/images/github.svg"

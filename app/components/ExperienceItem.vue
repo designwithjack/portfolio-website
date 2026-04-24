@@ -6,7 +6,7 @@
       <h4 class="text-lg leading-6 sm:pt-0.5">
         {{ company }}
       </h4>
-      <p class="text-sm pt-1">
+      <p class="text-sm pt-2">
         {{ role }}
       </p>
       <p class="text-muted text-sm pt-1">

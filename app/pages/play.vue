@@ -6,7 +6,7 @@
       >
         <ScrollReveal>
           <h1 class="text-muted pb-8">Play</h1>
-          <p class="text-2xl max-w-[42ch] pr-3 mb-5 text-balance">
+          <p class="text-2xl max-w-[42ch] pr-3 mb-8 text-balance pb-4">
             If you’re wondering what makes me tick, you’ll find some experiments
             with clocks and a budding appetite for the botanical. Expressing my
             creative spark by coding playful side projects that feed my
@@ -15,7 +15,7 @@
         </ScrollReveal>
       </section>
 
-      <section class="pt-[7vw] flex flex-col gap-20 md:gap-32">
+      <section class="pt-[4vw] flex flex-col">
         <ScrollReveal>
           <ProjectCard
             image="/images/projects/the-colour-clock.png"
