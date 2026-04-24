@@ -2,7 +2,7 @@
   <component
     :is="rootTag"
     v-bind="rootAttrs"
-    class="grid grid-cols-1 md:grid-cols-10 bg-background gap-6 md:gap-10 lg:gap-14 xl:gap-16 2xl:gap-20"
+    class="grid grid-cols-1 md:grid-cols-10 bg-background gap-6 md:gap-10 lg:gap-14 xl:gap-16 2xl:gap-20 mb-20 md:mb-32"
   >
     <motion.div
       class="contents"

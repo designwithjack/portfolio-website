@@ -6,7 +6,7 @@
       >
         <ScrollReveal>
           <h1 class="text-muted pb-8">Work</h1>
-          <p class="text-2xl max-w-[50ch] pr-3 mb-8">
+          <p class="text-2xl max-w-[42ch] pr-3 mb-8 text-balance">
             Solving complex problems in technical domains is where I'm most at
             home, which makes B2B SaaS a natural fit. I care a lot about craft,
             though never at the expense of what users actually need or what the
@@ -14,18 +14,16 @@
             probably was. The work here is from projects where I was the sole or
             lead designer.
           </p>
-          <Button
-            class="mb-12"
-            variant="primary"
-            size="lg"
-            href="mailto:hello@designwithjack.com?subject=Chat%20with%20Jack"
-          >
-            Request case studies
-          </Button>
         </ScrollReveal>
       </section>
 
-      <section class="pt-[7vw] flex flex-col gap-20 md:gap-32">
+      <section class="pt-[5vw] flex flex-col">
+        <ScrollReveal
+          as="h2"
+          class="mt-5 mb-20 text-sm font-medium tracking-[0.105em] uppercase text-muted"
+        >
+          Latest case study
+        </ScrollReveal>
         <ScrollReveal>
           <ProjectCard
             image="/images/projects/speckle.png"
@@ -46,13 +44,23 @@
             </div>
           </ProjectCard>
         </ScrollReveal>
+      </section>
+      <hr class="border-border border-b mb-10" />
+      <section class="pt-[5vw] flex flex-col">
+        <ScrollReveal
+          as="h2"
+          class="mt-5 mb-20 text-sm font-medium tracking-[0.105em] uppercase text-muted"
+        >
+          Previous projects
+        </ScrollReveal>
+
         <ScrollReveal>
           <ProjectCard
             image="/images/projects/ghsmart.png"
             title="Leadership Development Platform"
             description="Define and assess the success of key hires and leaders"
             alt="Screenshot of the ghSmart platform"
-            :image-left="false"
+            :image-left="true"
           >
             <div>
               <p
@@ -70,7 +78,7 @@
             title="Marketing Spend Advisor"
             description="Analysing industry insights to optimise marketing budgets"
             alt="Screenshot of the Marketing Spend Advisor dashboard"
-            :image-left="true"
+            :image-left="false"
           >
             <div>
               <p
@@ -88,7 +96,7 @@
             title="Customer Experience Accelerator"
             description="Improving customer journeys that create the most value"
             alt="Screenshot from the Customer Experience Accelerator reports"
-            :image-left="false"
+            :image-left="true"
           >
             <div>
               <p
@@ -106,7 +114,7 @@
             title="Prizm Design System"
             description="Harmonising design across global teams and enterprise tools"
             alt="Screenshot from the design system documentation"
-            :image-left="true"
+            :image-left="false"
           >
             <div>
               <p
@@ -124,7 +132,7 @@
             title="Promotion Advisor"
             description="Collaborative plans and forecasts for retailer promotions"
             alt="Screenshot from Promotion Advisor"
-            :image-left="false"
+            :image-left="true"
           >
             <div>
               <p
@@ -135,6 +143,16 @@
               <p>Periscope</p>
             </div>
           </ProjectCard>
+        </ScrollReveal>
+        <ScrollReveal class="flex justify-center">
+          <Button
+            class="mb-12"
+            variant="primary"
+            size="xl"
+            href="mailto:hello@designwithjack.com?subject=Chat%20with%20Jack"
+          >
+            Request access
+          </Button>
         </ScrollReveal>
       </section>
     </div>

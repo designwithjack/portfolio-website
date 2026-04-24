@@ -6,7 +6,7 @@
       >
         <ScrollReveal>
           <h1 class="text-muted pb-8">Play</h1>
-          <p class="text-2xl max-w-[50ch] pr-3 mb-5">
+          <p class="text-2xl max-w-[42ch] pr-3 mb-5 text-balance">
             If you’re wondering what makes me tick, you’ll find some experiments
             with clocks and a budding appetite for the botanical. Expressing my
             creative spark by coding playful side projects that feed my

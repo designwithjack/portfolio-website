@@ -13,7 +13,7 @@
 import { computed } from "vue";
 
 type ButtonVariant = "primary" | "secondary" | "outline" | "ghost";
-type ButtonSize = "md" | "lg";
+type ButtonSize = "md" | "lg" | "xl";
 
 interface Props {
   variant?: ButtonVariant;
@@ -43,6 +43,8 @@ const variantClasses = computed(() => {
 
 const sizeClasses = computed(() => {
   switch (props.size) {
+    case "xl":
+      return "px-6 h-12 text-base leading-none";
     case "lg":
       return "px-4 h-10 text-base leading-none";
     case "md":
