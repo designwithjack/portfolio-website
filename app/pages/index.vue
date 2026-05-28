@@ -27,7 +27,7 @@
           <ExperienceItem
             company="Speckle"
             role="Product Designer"
-            dates="May 2025 — April 2026"
+            dates="May 2025 — Apr 2026"
           >
             <p>
               Speckle is a Series A startup building software used by thousands
