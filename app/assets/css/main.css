@@ -39,7 +39,7 @@
   --color-foreground: #ffffff;
   --color-muted: rgba(255, 255, 255, 0.6);
   --color-border: rgba(255, 255, 255, 0.2);
-  --page-max-width: 1200px;
+  --page-max-width: 1440px;
 
   --breakpoint-xs: 30rem; /* 480px */
 }
