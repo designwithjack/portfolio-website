@@ -1,7 +1,7 @@
 <template>
   <!-- page-content: full-width card with rounded-b corners + footer clearance -->
   <div class="page-content">
-    <div class="page-container pt-40 lg:pt-54 pb-24">
+    <div class="page-container pt-[clamp(144px,50vw,288px)] pb-24">
       <section
         class="xs:text-4xl xs:leading-11 max-w-[40ch] text-3xl leading-9 font-light text-balance"
       >

@@ -2,7 +2,7 @@
   <NuxtLink
     :to="to"
     :class="[
-      'text-base transition-colors leading-10 px-3',
+      'text-base transition-colors leading-9 px-3.5',
       isActive ? 'text-foreground' : 'text-muted hover:text-foreground',
     ]"
   >
