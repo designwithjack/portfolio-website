@@ -1,12 +1,14 @@
 <template>
   <!-- page-content: full-width card with rounded-b corners + footer clearance -->
   <div class="page-content">
-    <div class="page-container pt-[clamp(144px,50vw,288px)] pb-24">
+    <div
+      class="page-container pt-[clamp(144px,50vw,288px)] pb-[clamp(0px,calc(10vw-72px),72px)]"
+    >
       <section
-        class="xs:text-4xl xs:leading-11 max-w-[40ch] text-3xl leading-9 font-light text-balance"
+        class="xs:text-4xl xs:leading-12 max-w-180 text-3xl leading-10 -tracking-[0.005em] font-light text-balance"
       >
         <ScrollReveal>
-          <p class="text-muted pb-3">Hello, I'm Jack</p>
+          <p class="text-muted pb-3 xs:pb-4">Hello, I'm Jack</p>
           <p>
             A product designer who loves transforming complex problems into
             simple, user-friendly experiences. Naturally curious and with a keen
@@ -15,10 +17,10 @@
           </p>
         </ScrollReveal>
       </section>
-      <section class="pt-[7vw]">
+      <section class="pt-[clamp(72px,10vw,144px)]">
         <ScrollReveal
           as="h2"
-          class="mt-5 mb-2.5 text-sm font-medium tracking-[0.105em] uppercase text-muted"
+          class="mt-1.5 mb-1 sm:mt-2.5 sm:mb-2 text-sm leading-none font-medium tracking-[0.11em] uppercase text-muted"
         >
           Experience
         </ScrollReveal>
@@ -149,16 +151,21 @@
                 </p>
               </ExperienceItem>
               <ScrollReveal
-                class="flex flex-col gap-3 py-9 sm:flex-row sm:gap-16 md:gap-20 xl:gap-28"
+                class="flex sm:items-center flex-col gap-4 py-9 sm:flex-row sm:gap-0"
               >
-                <div class="min-w-40 md:min-w-60">
-                  <h4 class="text-base leading-5 sm:pt-0.5">
+                <div class="min-w-40 sm:min-w-[180px] md:min-w-[288px] pr-9">
+                  <h4
+                    class="sm:w-[180px] md:w-[288px] text-base leading-6 font-medium tracking:[0.0075em]"
+                  >
                     Other previous experience
                   </h4>
                 </div>
-                <div class="max-w-md text-base text-pretty">
-                  <p>LBi, JWT, Suburb, DLKW</p>
-                </div>
+
+                <p
+                  class="w-full text-base font-light leading-6 tracking:[0.0075em]"
+                >
+                  LBi, JWT, Suburb, DLKW
+                </p>
               </ScrollReveal>
             </motion.div>
           </AnimatePresence>
@@ -169,7 +176,7 @@
           ></div>
         </div>
 
-        <div class="mb-8 border-border border-b">
+        <div class="mb-4 border-border border-b">
           <Button
             variant="secondary"
             type="button"
@@ -182,35 +189,43 @@
           </Button>
         </div>
       </section>
-      <section class="pt-[6vw]">
+      <section class="pt-[clamp(44px,5vw,72px)] border-border border-b">
         <ScrollReveal
           as="h2"
-          class="mt-5 mb-2.5 text-sm font-medium tracking-[0.105em] uppercase text-muted"
+          class="mt-1.5 mb-1 sm:mt-2.5 sm:mb-2 text-sm leading-none font-medium tracking-[0.11em] uppercase text-muted"
         >
           Education
         </ScrollReveal>
         <ScrollReveal>
           <div
-            class="flex flex-col gap-3 pt-9 sm:flex-row sm:gap-16 md:gap-20 xl:gap-28"
+            class="flex sm:items-center flex-col gap-2 pt-9 sm:flex-row sm:gap-0"
           >
-            <div class="flex min-w-40 md:min-w-60">
-              <h4 class="text-lg leading-6 sm:pt-0.5">
+            <div class="min-w-40 sm:min-w-[180px] md:min-w-[288px] pr-9">
+              <h4
+                class="sm:max-w-[180px] md:max-w-[288px] text-base leading-6 font-medium tracking:[0.0075em]"
+              >
                 Bournemouth University
               </h4>
             </div>
-            <div class="max-w-md text-base text-pretty">
+            <div
+              class="w-full text-base font-light leading-6 tracking:[0.0075em]"
+            >
               <p>BA (Hons) Interactive Media Production</p>
             </div>
           </div>
           <div
-            class="flex flex-col gap-3 py-9 sm:flex-row sm:gap-16 md:gap-20 xl:gap-28"
+            class="flex sm:items-center flex-col gap-2 py-9 sm:flex-row sm:gap-0"
           >
-            <div class="flex min-w-40 md:min-w-60">
-              <h4 class="text-lg leading-6 sm:pt-0.5">
+            <div class="min-w-40 sm:min-w-[180px] md:min-w-[288px] pr-9">
+              <h4
+                class="sm:max-w-[180px] md:max-w-[288px] text-base leading-6 font-medium tracking:[0.0075em] text-balance"
+              >
                 Colchester School of Art
               </h4>
             </div>
-            <div class="max-w-md text-base text-pretty">
+            <div
+              class="w-full text-base font-light leading-6 tracking:[0.0075em]"
+            >
               <p>(BTech) Foundation Studies in Art & Design</p>
             </div>
           </div>
