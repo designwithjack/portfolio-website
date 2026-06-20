@@ -27,12 +27,11 @@
         <ScrollReveal>
           <ProjectCard
             image="/images/projects/speckle.png"
-            title="3D Design Reviews"
-            description="Collaborative design review features for architecture and engineering projects"
+            title="Saved Views"
+            description="Save, organise and share viewer states of your 3D models"
             alt="Screenshot of the Speckle web app"
             :image-left="true"
-            href="https://www.figma.com/deck/zxodmwTLKd4I1e7eZg9uJw/Case-Study---Saved-Views?node-id=1-275&t=np2ZG5juzeD4AalW-1"
-            open-in-new-tab
+            href="/work/saved-views"
           >
             <div>
               <p

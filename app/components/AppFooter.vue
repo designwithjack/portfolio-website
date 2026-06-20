@@ -1,29 +1,30 @@
 <template>
   <footer
-    class="surface-light bg-background fixed inset-x-0 bottom-0 flex h-2/3 flex-col justify-end pb-10"
+    class="surface-light bg-background fixed inset-x-0 bottom-0 flex h-2/3 flex-col justify-end pb-[17px] sm:pb-10"
   >
     <div
-      class="page-container text-foreground flex items-end justify-between gap-10 text-base px-1 xs:px-0"
+      class="page-container text-foreground items-center flex text-base tracking-[0.005em] gap-[5vw] sm:gap-0 sm:h-10"
     >
-      <div class="flex flex-col gap-4 sm:gap-12 sm:flex-row">
-        <a
-          href="mailto:hello@designwithjack.com?subject=Chat%20with%20Jack"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="flex items-center gap-4 py-2 transition-opacity hover:opacity-60"
-        >
-          <img
-            src="/images/email.svg"
-            alt="Email"
-            class="h-5 w-5 object-cover"
-          />
-          Email
-        </a>
+      <div
+        class="size-10 sm:size-9 shrink-0 overflow-hidden rounded-full sm:my-0.5 mr-auto sm:mr-8"
+      >
+        <img
+          src="/images/avatar.png"
+          alt="Avatar"
+          class="h-full w-full object-cover"
+        />
+      </div>
+      <div
+        class="hidden sm:flex sm:flex-1 bg-black opacity-[0.16] h-px mr-7"
+      ></div>
+      <div
+        class="w-1/2 sm:w-fit flex flex-col gap-4 sm:gap-5 md:gap-7 sm:flex-row sm:items-center"
+      >
         <a
           href="https://www.linkedin.com/in/jack-os"
           target="_blank"
           rel="noopener noreferrer"
-          class="flex items-center gap-4 py-2 transition-opacity hover:opacity-60"
+          class="flex items-center gap-3.5 py-2 transition-opacity hover:opacity-60"
         >
           <img
             src="/images/linkedin.svg"
@@ -32,12 +33,12 @@
           />
           LinkedIn
         </a>
-
+        <div class="w-full sm:w-8 md:w-11 bg-black opacity-[0.16] h-px"></div>
         <a
           href="https://github.com/designwithjack"
           target="_blank"
           rel="noopener noreferrer"
-          class="flex items-center gap-4 py-2 transition-opacity hover:opacity-60"
+          class="flex items-center gap-3.5 py-2 transition-opacity hover:opacity-60"
         >
           <img
             src="/images/github.svg"
@@ -46,13 +47,20 @@
           />
           GitHub
         </a>
-      </div>
-      <div class="size-10 shrink-0 overflow-hidden">
-        <img
-          src="/images/logo-black.svg"
-          alt="Logo"
-          class="h-full w-full object-cover"
-        />
+        <div class="w-full sm:w-8 md:w-11 bg-black opacity-[0.16] h-px"></div>
+        <a
+          href="mailto:hello@designwithjack.com?subject=Chat%20with%20Jack"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center gap-3.5 py-2 transition-opacity hover:opacity-60"
+        >
+          <img
+            src="/images/email.svg"
+            alt="Email"
+            class="h-5 w-5 object-cover"
+          />
+          Email
+        </a>
       </div>
     </div>
   </footer>
