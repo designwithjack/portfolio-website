@@ -1,11 +1,11 @@
 <template>
   <div class="page-content">
     <div
-      class="page-container pt-[clamp(144px,50vw,288px)] pb-[clamp(0px,calc(10vw-72px),72px)]"
+      class="page-container pt-[clamp(128px,50vw,288px)] pb-[clamp(0px,calc(10vw-72px),72px)]"
     >
       <section>
         <ScrollReveal>
-          <h1 class="pb-7 md:pb-9 heading-2xl">Play</h1>
+          <h1 class="pb-9 heading-2xl">Play</h1>
           <p
             class="text-2xl leading-9 tracking-[0.005em] max-w-[720px] text-pretty font-light"
           >
