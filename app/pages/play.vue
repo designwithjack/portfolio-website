@@ -1,12 +1,14 @@
 <template>
   <div class="page-content">
-    <div class="page-container pt-40 lg:pt-54 pb-24">
-      <section
-        class="xs:text-4xl xs:leading-11 max-w-2xl text-3xl leading-9 font-light text-balance"
-      >
+    <div
+      class="page-container pt-[clamp(144px,50vw,288px)] pb-[clamp(0px,calc(10vw-72px),72px)]"
+    >
+      <section>
         <ScrollReveal>
-          <h1 class="text-muted pb-8">Play</h1>
-          <p class="text-2xl max-w-[42ch] pr-3 mb-8 text-balance pb-4">
+          <h1 class="pb-7 md:pb-9 heading-2xl">Play</h1>
+          <p
+            class="text-2xl leading-9 tracking-[0.005em] max-w-[720px] text-pretty font-light"
+          >
             If you’re wondering what makes me tick, you’ll find some experiments
             with clocks and a budding appetite for the botanical. Expressing my
             creative spark by coding playful side projects that feed my
@@ -15,7 +17,7 @@
         </ScrollReveal>
       </section>
 
-      <section class="pt-[4vw] flex flex-col">
+      <section class="pt-[clamp(72px,10vw,108px)] flex flex-col">
         <ScrollReveal>
           <ProjectCard
             image="/images/projects/the-colour-clock.png"
@@ -72,9 +74,9 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: "Play — Jack Hughes",
+  title: "Jack Hughes — Play",
   description: "Personal and experimental projects.",
-  ogTitle: "Play — Jack Hughes",
+  ogTitle: "Jack Hughes — Play",
   ogDescription: "Personal and experimental projects.",
   ogImage: "/images/og-default.png",
   twitterCard: "summary_large_image",

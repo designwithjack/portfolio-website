@@ -10,10 +10,10 @@
         <ScrollReveal>
           <p class="text-muted pb-3 xs:pb-4">Hello, I'm Jack</p>
           <p>
-            A product designer who loves transforming complex problems into
-            simple, user-friendly experiences. Naturally curious and with a keen
-            eye for detail, I work with teams to craft thoughtful and refined
-            interfaces.
+            A product designer who turns complex technical problems into
+            high-fidelity, shippable solutions. I've worked across scrappy
+            startups and global enterprise, partnering with teams from early
+            strategy through to production code.
           </p>
         </ScrollReveal>
       </section>
@@ -241,12 +241,12 @@ import { motion, AnimatePresence } from "motion-v";
 import { usePrefersReducedMotion } from "~/composables/usePrefersReducedMotion";
 
 useSeoMeta({
-  title: "Jack Hughes. Digital Product Designer.",
+  title: "Jack Hughes — Senior Product Designer",
   description:
-    "Digital product designer specialising in thoughtful, end-to-end experiences across complex, technical domains.",
-  ogTitle: "Jack Hughes. Digital Product Designer.",
+    "Jack Hughes is a craft-obsessed Product Designer specialising in simplifying user experiences for complex, technical SaaS tools.",
+  ogTitle: "Jack Hughes — Senior Product Designer",
   ogDescription:
-    "Digital product designer specialising in thoughtful, end-to-end experiences across complex, technical domains.",
+    "Jack Hughes is a craft-obsessed Product Designer specialising in simplifying user experiences for complex, technical SaaS tools.",
   ogImage: "/images/og-default.png",
   twitterCard: "summary_large_image",
 });

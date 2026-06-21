@@ -43,6 +43,17 @@
 
   --breakpoint-xs: 30rem; /* 480px */
 }
+@utility heading-2xl {
+  font-weight: 300;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: -0.016em;
+  @variant md {
+    font-size: 76px;
+    line-height: 88px;
+    letter-spacing: -0.017em;
+  }
+}
 
 /* Base resets */
 @layer base {

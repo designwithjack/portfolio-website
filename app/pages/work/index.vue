@@ -1,12 +1,14 @@
 <template>
   <div class="page-content">
-    <div class="page-container pt-40 lg:pt-54 pb-24">
-      <section
-        class="xs:text-4xl xs:leading-11 max-w-2xl text-3xl leading-9 font-light text-balance"
-      >
+    <div
+      class="page-container pt-[clamp(144px,50vw,288px)] pb-[clamp(0px,calc(10vw-72px),72px)]"
+    >
+      <section class="text-pretty">
         <ScrollReveal>
-          <h1 class="text-muted pb-8">Work</h1>
-          <p class="text-2xl max-w-[42ch] pr-3 mb-8 text-balance pb-4">
+          <h1 class="pb-7 md:pb-9 heading-2xl">Work</h1>
+          <p
+            class="text-2xl leading-9 tracking-[0.005em] max-w-[720px] font-light"
+          >
             Solving complex problems in technical domains is where I'm most at
             home, which makes B2B SaaS a natural fit. I care a lot about craft,
             though never at the expense of what users actually need or what the
@@ -17,10 +19,10 @@
         </ScrollReveal>
       </section>
 
-      <section class="pt-[4vw] flex flex-col">
+      <section class="pt-[clamp(72px,10vw,108px)] flex flex-col">
         <ScrollReveal
           as="h2"
-          class="mt-5 mb-20 xl:mb-22 text-sm font-medium tracking-[0.105em] uppercase text-muted"
+          class="mt-1.5 mb-1 sm:mt-2.5 sm:mb-2 text-sm leading-none font-medium tracking-[0.11em] uppercase text-muted pb-12"
         >
           Latest case study
         </ScrollReveal>
@@ -31,7 +33,8 @@
             description="Save, organise and share viewer states of your 3D models"
             alt="Screenshot of the Speckle web app"
             :image-left="true"
-            href="/work/saved-views"
+            href="https://www.figma.com/deck/zxodmwTLKd4I1e7eZg9uJw/Case-Study---Saved-Views?node-id=1-275&t=np2ZG5juzeD4AalW-1"
+            open-in-new-tab
           >
             <div>
               <p
@@ -44,11 +47,11 @@
           </ProjectCard>
         </ScrollReveal>
       </section>
-      <hr class="border-border border-b mb-10" />
-      <section class="pt-[4vw] flex flex-col">
+      <hr class="border-border border-b" />
+      <section class="pt-[clamp(72px,10vw,108px)] flex flex-col">
         <ScrollReveal
           as="h2"
-          class="mt-5 mb-20 xl:mb-22 text-sm font-medium tracking-[0.105em] uppercase text-muted"
+          class="mt-1.5 mb-1 sm:mt-2.5 sm:mb-2 text-sm leading-none font-medium tracking-[0.11em] uppercase text-muted pb-12"
         >
           Previous projects
         </ScrollReveal>
@@ -159,10 +162,10 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: "Work — Jack Hughes",
+  title: "Jack Hughes — Work",
   description:
     "Selected work from complex, technical domains in B2B SaaS, with a focus on thoughtful, business-aligned design craft.",
-  ogTitle: "Work — Jack Hughes",
+  ogTitle: "Jack Hughes — Work",
   ogDescription:
     "Selected work from complex, technical domains in B2B SaaS, with a focus on thoughtful, business-aligned design craft.",
   ogImage: "/images/og-default.png",
