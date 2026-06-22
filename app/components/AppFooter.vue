@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="surface-light bg-background fixed inset-x-0 bottom-0 flex h-2/3 flex-col justify-end pb-[17px] sm:pb-10"
+    class="-z-1 surface-light bg-background fixed inset-x-0 bottom-0 flex h-2/3 flex-col justify-end pb-[17px] sm:pb-10"
   >
     <div
       class="page-container text-foreground items-center flex text-base tracking-[0.005em] gap-[5vw] sm:gap-0 sm:h-10"
