@@ -42,6 +42,8 @@
   --page-max-width: 1440px;
 
   --breakpoint-xs: 30rem; /* 480px */
+
+  --fluid-heading: clamp(36px, 4.5vw, 58px);
 }
 @utility heading-2xl {
   font-weight: 300;
@@ -53,6 +55,12 @@
     line-height: 88px;
     letter-spacing: -0.017em;
   }
+}
+@utility fluid-heading {
+  font-size: var(--fluid-heading);
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: -0.016em;
 }
 
 /* Base resets */
@@ -105,12 +113,12 @@
 
 /* Full viewport height — use 100dvh on supporting browsers (e.g. iPhone Safari)
    so the layout tracks the visible viewport and content isn’t cropped by browser
-   chrome; 100vh fallback for older browsers. */
+   chrome; 100vh fallback for older browsers. 
 @utility min-h-screen-dynamic {
   min-height: 100vh;
   min-height: 100dvh;
 }
-
+*/
 /* Page content wrapper — use this as the outermost div on each page.
    Rounds the bottom corners and adds clearance so the fixed footer is exposed
    when the user scrolls to the end. */

@@ -5,7 +5,7 @@
       class="page-container pt-[clamp(128px,50vw,288px)] pb-[clamp(0px,calc(10vw-72px),72px)]"
     >
       <section
-        class="xs:text-4xl xs:leading-12 max-w-180 text-3xl leading-10 -tracking-[0.005em] font-light text-balance"
+        class="xs:text-4xl xs:leading-12 max-w-180 text-3xl leading-11 -tracking-[0.005em] font-light text-balance"
       >
         <ScrollReveal>
           <p class="text-muted pb-3 xs:pb-4">Hello, I'm Jack</p>
@@ -189,7 +189,7 @@
           </Button>
         </div>
       </section>
-      <section class="pt-[clamp(44px,5vw,72px)] border-border border-b">
+      <section class="pt-[clamp(44px,5vw,72px)] border-border sm:border-b">
         <ScrollReveal
           as="h2"
           class="mt-1.5 mb-1 sm:mt-2.5 sm:mb-2 text-sm leading-none font-medium tracking-[0.11em] uppercase text-muted"
