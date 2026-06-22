@@ -1,7 +1,7 @@
 <template>
   <div class="page-content">
     <div
-      class="page-container pt-[clamp(128px,50vw,288px)] pb-[clamp(0px,calc(10vw-72px),72px)]"
+      class="page-container pt-[clamp(108px,50vw,288px)] pb-[clamp(0px,calc(10vw-72px),72px)]"
     >
       <section class="text-pretty">
         <ScrollReveal>

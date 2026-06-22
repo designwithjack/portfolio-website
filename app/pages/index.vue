@@ -2,7 +2,7 @@
   <!-- page-content: full-width card with rounded-b corners + footer clearance -->
   <div class="page-content">
     <div
-      class="page-container pt-[clamp(136px,50vw,288px)] pb-[clamp(0px,calc(10vw-72px),72px)]"
+      class="page-container pt-[clamp(128px,50vw,288px)] pb-[clamp(0px,calc(10vw-72px),72px)]"
     >
       <section
         class="xs:text-4xl xs:leading-12 max-w-180 text-3xl leading-10 -tracking-[0.005em] font-light text-balance"
