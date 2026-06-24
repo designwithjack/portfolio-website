@@ -22,13 +22,13 @@
       <section class="pt-[clamp(72px,10vw,108px)] flex flex-col">
         <ScrollReveal
           as="h2"
-          class="mt-1.5 mb-1 sm:mt-2.5 sm:mb-2 text-sm leading-none font-medium tracking-[0.11em] uppercase text-muted pb-12"
+          class="mt-1.5 mb-1 sm:mt-2.5 sm:mb-2 text-sm leading-none font-medium tracking-[0.11em] uppercase text-muted pb-11"
         >
           Latest case study
         </ScrollReveal>
         <ScrollReveal>
           <ProjectCard
-            image="/images/projects/speckle.png"
+            image="/images/projects/speckle.jpg"
             title="Saved Views"
             description="Save, organise and share viewer states of your 3D models"
             alt="Screenshot of the Speckle web app"
@@ -47,114 +47,155 @@
           </ProjectCard>
         </ScrollReveal>
       </section>
-      <hr class="border-border border-b" />
-      <section class="pt-[clamp(72px,10vw,108px)] flex flex-col">
+      <hr class="border-border border-b mt-[clamp(44px,5vw,72px)]" />
+      <section class="pt-[clamp(44px,5vw,72px)]">
         <ScrollReveal
           as="h2"
-          class="mt-1.5 mb-1 sm:mt-2.5 sm:mb-2 text-sm leading-none font-medium tracking-[0.11em] uppercase text-muted pb-12"
+          class="mt-1.5 mb-1 sm:mt-2.5 sm:mb-2 text-sm leading-none font-medium tracking-[0.11em] uppercase text-muted pb-11"
         >
-          Previous projects
+          Selected projects
         </ScrollReveal>
-
-        <ScrollReveal>
-          <ProjectCard
-            image="/images/projects/ghsmart.png"
-            title="Leadership Development Platform"
-            description="Define and assess the success of key hires and leaders"
-            alt="Screenshot of the ghSmart platform"
-            :image-left="true"
-          >
-            <div>
-              <p
-                class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
-              >
-                Client
-              </p>
-              <p>ghSmart</p>
-            </div>
-          </ProjectCard>
-        </ScrollReveal>
-        <ScrollReveal>
-          <ProjectCard
-            image="/images/projects/msa.png"
-            title="Marketing Spend Advisor"
-            description="Analysing industry insights to optimise marketing budgets"
-            alt="Screenshot of the Marketing Spend Advisor dashboard"
-            :image-left="false"
-          >
-            <div>
-              <p
-                class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
-              >
-                Function
-              </p>
-              <p>Growth, Marketing & Sales</p>
-            </div>
-          </ProjectCard>
-        </ScrollReveal>
-        <ScrollReveal>
-          <ProjectCard
-            image="/images/projects/cxa.png"
-            title="Customer Experience Accelerator"
-            description="Improving customer journeys that create the most value"
-            alt="Screenshot from the Customer Experience Accelerator reports"
-            :image-left="true"
-          >
-            <div>
-              <p
-                class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
-              >
-                Function
-              </p>
-              <p>Customer Experience</p>
-            </div>
-          </ProjectCard>
-        </ScrollReveal>
-        <ScrollReveal>
-          <ProjectCard
-            image="/images/projects/prizm.png"
-            title="Prizm Design System"
-            description="Harmonising design across global teams and enterprise tools"
-            alt="Screenshot from the design system documentation"
-            :image-left="false"
-          >
-            <div>
-              <p
-                class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
-              >
-                Function
-              </p>
-              <p>Periscope</p>
-            </div>
-          </ProjectCard>
-        </ScrollReveal>
-        <ScrollReveal>
-          <ProjectCard
-            image="/images/projects/promo.png"
-            title="Promotion Advisor"
-            description="Collaborative plans and forecasts for retailer promotions"
-            alt="Screenshot from Promotion Advisor"
-            :image-left="true"
-          >
-            <div>
-              <p
-                class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
-              >
-                Function
-              </p>
-              <p>Periscope</p>
-            </div>
-          </ProjectCard>
-        </ScrollReveal>
-        <ScrollReveal class="flex justify-center my-6">
-          <Button
-            variant="primary"
-            size="xl"
-            href="mailto:hello@designwithjack.com?subject=Chat%20with%20Jack"
-          >
-            Request access
-          </Button>
-        </ScrollReveal>
+        <div class="flex flex-col gap-[clamp(72px,10vw,144px)]">
+          <ScrollReveal>
+            <ProjectCard
+              image="/images/projects/ghsmart.jpg"
+              title="Leadership Development Platform"
+              description="Define and assess the success of key hires and leaders"
+              alt="Screenshot of the ghSmart platform"
+              :image-left="true"
+            >
+              <div>
+                <p
+                  class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
+                >
+                  Company
+                </p>
+                <p>ghSmart</p>
+              </div>
+            </ProjectCard>
+          </ScrollReveal>
+          <ScrollReveal>
+            <ProjectCard
+              image="/images/projects/msa.jpg"
+              title="Marketing Spend Advisor"
+              description="Analysing industry insights to optimise marketing budgets"
+              alt="Screenshot of the Marketing Spend Advisor dashboard"
+              :image-left="false"
+            >
+              <div class="flex flex-col xs:flex-row gap-4 xs:gap-0">
+                <div class="w-54">
+                  <p
+                    class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
+                  >
+                    Company
+                  </p>
+                  <p>McKinsey & Company</p>
+                </div>
+                <div>
+                  <p
+                    class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
+                  >
+                    Team
+                  </p>
+                  <p>Growth, Marketing & Sales</p>
+                </div>
+              </div>
+            </ProjectCard>
+          </ScrollReveal>
+          <ScrollReveal>
+            <ProjectCard
+              image="/images/projects/cxa.jpg"
+              title="Customer Experience Accelerator"
+              description="Improving customer journeys that create the most value"
+              alt="Screenshot from the Customer Experience Accelerator reports"
+              :image-left="true"
+            >
+              <div class="flex flex-col xs:flex-row gap-4 xs:gap-0">
+                <div class="w-54">
+                  <p
+                    class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
+                  >
+                    Company
+                  </p>
+                  <p>McKinsey & Company</p>
+                </div>
+                <div>
+                  <p
+                    class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
+                  >
+                    Team
+                  </p>
+                  <p>Customer Experience</p>
+                </div>
+              </div>
+            </ProjectCard>
+          </ScrollReveal>
+          <ScrollReveal>
+            <ProjectCard
+              image="/images/projects/prizm.jpg"
+              title="Prizm Design System"
+              description="Harmonising design across global teams and enterprise tools"
+              alt="Screenshot from the design system documentation"
+              :image-left="false"
+            >
+              <div class="flex flex-col xs:flex-row gap-4 xs:gap-0">
+                <div class="w-54">
+                  <p
+                    class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
+                  >
+                    Company
+                  </p>
+                  <p>McKinsey & Company</p>
+                </div>
+                <div>
+                  <p
+                    class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
+                  >
+                    Team
+                  </p>
+                  <p>Periscope</p>
+                </div>
+              </div>
+            </ProjectCard>
+          </ScrollReveal>
+          <ScrollReveal>
+            <ProjectCard
+              image="/images/projects/promo.jpg"
+              title="Promotion Advisor"
+              description="Collaborative plans and forecasts for retailer promotions"
+              alt="Screenshot from Promotion Advisor"
+              :image-left="true"
+            >
+              <div class="flex flex-col xs:flex-row gap-4 xs:gap-0">
+                <div class="w-54">
+                  <p
+                    class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
+                  >
+                    Company
+                  </p>
+                  <p>McKinsey & Company</p>
+                </div>
+                <div>
+                  <p
+                    class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
+                  >
+                    Team
+                  </p>
+                  <p>Periscope</p>
+                </div>
+              </div>
+            </ProjectCard>
+          </ScrollReveal>
+          <ScrollReveal class="flex justify-center my-6">
+            <Button
+              variant="primary"
+              size="xl"
+              href="mailto:hello@designwithjack.com?subject=Chat%20with%20Jack"
+            >
+              Request access
+            </Button>
+          </ScrollReveal>
+        </div>
       </section>
     </div>
   </div>

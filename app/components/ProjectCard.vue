@@ -8,7 +8,7 @@
       while-press="press"
     >
       <div
-        class="bg-neutral-800 overflow-hidden rounded-[clamp(9px,1.25vw,18px)] aspect-video min-w-0 max-h-fit mb-9 xs:mb-11"
+        class="bg-neutral-800 overflow-hidden rounded-[clamp(9px,1.25vw,18px)] aspect-video min-w-0 max-h-fit"
       >
         <motion.img
           :src="image"
@@ -21,7 +21,7 @@
         />
       </div>
       <motion.div
-        class="w-full flex flex-col justify-center min-h-full gap-4 xs:gap-7"
+        class="w-full flex flex-col justify-center min-h-full gap-4 xs:gap-7 pt-9 xs:pt-11"
         :variants="passThroughVariants"
       >
         <p class="fluid-heading text-balance text-foreground">
@@ -32,7 +32,7 @@
           :variants="passThroughVariants"
         >
           <h2
-            class="text-lg xs:text-xl leading:6 xs:leading-8 tracking-[0.014em] font-light text-foreground"
+            class="text-xl xs:text-2xl leading:8 xs:leading-9 tracking-[0.014em] xs:tracking-[0.005em] font-light text-foreground"
           >
             {{ title }}
           </h2>
