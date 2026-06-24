@@ -1,6 +1,8 @@
 <template>
-  <header
-    class="app-header fixed inset-x-0 top-0 z-50 bg-background pt-[clamp(40px,calc(10vw*0.8),96px)]"
+  <motion.header
+    class="app-header fixed inset-x-0 top-0 z-50 bg-background"
+    :animate="headerPaddingAnimate"
+    :transition="headerTransition"
   >
     <div class="page-container flex h-10 items-center justify-between">
       <NuxtLink to="/" class="flex gap-[clamp(20px,5vw,32px)] items-center">
@@ -24,12 +26,23 @@
         </div>
       </nav>
     </div>
-  </header>
+    <div class="app-header-fade" aria-hidden="true" />
+  </motion.header>
 </template>
 
 <script setup lang="ts">
+import { computed } from "vue";
+import { motion } from "motion-v";
+import { useHeaderScroll } from "~/composables/useHeaderScroll";
+
 const navLinks: { label: string; href: string }[] = [
   { label: "Work", href: "/work" },
   { label: "Play", href: "/play" },
 ];
+
+const { paddingTop, headerTransition } = useHeaderScroll();
+
+const headerPaddingAnimate = computed(() =>
+  paddingTop.value !== null ? { paddingTop: `${paddingTop.value}px` } : {},
+);
 </script>

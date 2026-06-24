@@ -17,38 +17,37 @@
         </ScrollReveal>
       </section>
 
-      <section class="pt-[clamp(72px,10vw,108px)] flex flex-col">
+      <section
+        class="pt-[clamp(72px,10vw,108px)] flex flex-col gap-[clamp(72px,10vw,144px)]"
+      >
         <ScrollReveal>
           <ProjectCard
-            image="/images/projects/the-colour-clock.png"
+            image="/images/projects/the-colour-clock.jpg"
             title="The Colour Clock"
             description="Experimental clock that transforms time into the hexadecimal colour system"
             href="http://www.thecolourclock.com"
             alt="Screenshot of The Colour Clock"
-            :image-left="true"
             open-in-new-tab
           >
           </ProjectCard>
         </ScrollReveal>
         <ScrollReveal>
           <ProjectCard
-            image="/images/projects/rototime.png"
+            image="/images/projects/rototime.jpg"
             title="R O T O T I M E"
             description="Mixing digital display with analogue motion in homage to the Nixon Rotolog"
             href="https://rototime.superhi.hosting"
             alt="Screenshot of R O T O T I M E"
-            :image-left="false"
             open-in-new-tab
           >
           </ProjectCard>
         </ScrollReveal>
         <ScrollReveal>
           <ProjectCard
-            image="/images/projects/edible-flower-alphabet.png"
+            image="/images/projects/edible-flower-alphabet.jpg"
             title="Edible A–Z of Flowers"
             description="Recipes and growing tips to showcase a beautifully illustrated alphabet of edible flowers"
             alt="Screenshot of Edible A–Z of Flowers"
-            :image-left="true"
             href="https://www.edibleflowersalphabet.com/"
             open-in-new-tab
           >
@@ -57,12 +56,11 @@
 
         <ScrollReveal>
           <ProjectCard
-            image="/images/projects/length-of-a-minute.png"
+            image="/images/projects/length-of-a-minute.jpg"
             title="Length of a minute"
             description="For when you feel like time is dragging on, watch the minutes get longer by the second"
             href="https://lengthofaminute.superhi.hosting/"
             alt="Screenshots from Length of a minute"
-            :image-left="false"
             open-in-new-tab
           >
           </ProjectCard>

@@ -1,9 +1,5 @@
 <template>
-  <component
-    :is="rootTag"
-    v-bind="rootAttrs"
-    class="grid grid-cols-1 md:grid-cols-10 bg-background gap-8 xs:gap-10 lg:gap-13 xl:gap-16 2xl:gap-20 mb-20 md:mb-32 xl:mb-40"
-  >
+  <component :is="rootTag" v-bind="rootAttrs" class="bg-background">
     <motion.div
       class="contents"
       :variants="passThroughVariants"
@@ -12,8 +8,7 @@
       while-press="press"
     >
       <div
-        class="bg-neutral-800 overflow-hidden rounded-lg sm:rounded-xl md:col-span-6 aspect-video min-w-0 max-h-fit"
-        :class="imageLeft ? 'md:order-1 ' : 'md:order-2 '"
+        class="bg-neutral-800 overflow-hidden rounded-[clamp(9px,1.25vw,18px)] aspect-video min-w-0 max-h-fit"
       >
         <motion.img
           :src="image"
@@ -26,16 +21,18 @@
         />
       </div>
       <motion.div
-        class="w-full md:col-span-4 flex flex-col justify-center min-h-full gap-1 sm:gap-0 lg:gap-2 xl:gap-3"
-        :class="imageLeft ? 'md:order-2 ' : 'md:order-1 '"
+        class="w-full flex flex-col justify-center min-h-full gap-4 xs:gap-7 pt-9 xs:pt-11"
         :variants="passThroughVariants"
       >
+        <p class="fluid-heading text-balance text-foreground">
+          {{ description }}
+        </p>
         <motion.div
           class="flex min-h-10 items-center flex-row gap-4"
           :variants="passThroughVariants"
         >
           <h2
-            class="text-lg leading-6 xs:text-xl md:text-lg lg:text-xl font-light text-foreground"
+            class="text-xl xs:text-2xl leading:8 xs:leading-9 tracking-[0.014em] xs:tracking-[0.005em] font-light text-foreground"
           >
             {{ title }}
           </h2>
@@ -49,11 +46,7 @@
             />
           </motion.div>
         </motion.div>
-        <p
-          class="text-3xl md:text-[28px] lg:text-4xl xl:text-[45px] leading-10 md:leading-9 lg:leading-11 xl:leading-[54px] xl:tracking-[-0.005em] text-balance text-foreground pb-3 lg:pb-5"
-        >
-          {{ description }}
-        </p>
+
         <slot />
       </motion.div>
     </motion.div>

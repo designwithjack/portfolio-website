@@ -42,6 +42,8 @@
   --page-max-width: 1440px;
 
   --breakpoint-xs: 30rem; /* 480px */
+
+  --fluid-heading: clamp(36px, 4.5vw, 58px);
 }
 @utility heading-2xl {
   font-weight: 300;
@@ -54,6 +56,12 @@
     letter-spacing: -0.017em;
   }
 }
+@utility fluid-heading {
+  font-size: var(--fluid-heading);
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: -0.016em;
+}
 
 /* Base resets */
 @layer base {
@@ -64,15 +72,15 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overscroll-behavior: none;
-    background-color: var(--color-background);
-  }
-  body {
-    background-color: var(--color-background);
   }
 }
 
 :root {
+  background-color: var(--color-background);
   --page-container-vw: 90vw;
+  --header-padding-top-max: clamp(40px, calc(10vw * 0.8), 96px);
+  /* --header-fade-height-max: clamp(60px, calc(10vw * 1.2), 144px); */
+  --header-fade-height-max: 72px;
 }
 @media (min-width: 720px) {
   :root {
@@ -103,13 +111,6 @@
   --color-border: rgba(0, 0, 0, 0.22);
 }
 
-/* Full viewport height — use 100dvh on supporting browsers (e.g. iPhone Safari)
-   so the layout tracks the visible viewport and content isn’t cropped by browser
-   chrome; 100vh fallback for older browsers. */
-@utility min-h-screen-dynamic {
-  min-height: 100vh;
-  min-height: 100dvh;
-}
 
 /* Page content wrapper — use this as the outermost div on each page.
    Rounds the bottom corners and adds clearance so the fixed footer is exposed
@@ -123,12 +124,15 @@
 }
 
 @layer components {
-  .app-header::after {
-    content: "";
+  .app-header {
+    padding-top: var(--header-padding-top-max);
+  }
+
+  .app-header-fade {
     position: absolute;
     inset-inline: 0;
     top: 100%;
-    height: 144px;
+    height: var(--header-fade-height-max);
     pointer-events: none;
     background-color: var(--color-background);
     mask-image: linear-gradient(
