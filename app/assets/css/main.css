@@ -111,14 +111,7 @@
   --color-border: rgba(0, 0, 0, 0.22);
 }
 
-/* Full viewport height — use 100dvh on supporting browsers (e.g. iPhone Safari)
-   so the layout tracks the visible viewport and content isn’t cropped by browser
-   chrome; 100vh fallback for older browsers. 
-@utility min-h-screen-dynamic {
-  min-height: 100vh;
-  min-height: 100dvh;
-}
-*/
+
 /* Page content wrapper — use this as the outermost div on each page.
    Rounds the bottom corners and adds clearance so the fixed footer is exposed
    when the user scrolls to the end. */

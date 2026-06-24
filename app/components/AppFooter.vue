@@ -29,7 +29,7 @@
           />
           <span class="hidden sm:inline">LinkedIn</span>
         </a>
-        <div class="w-8 md:w-11 bg-black opacity-[0.16] h-px"></div>
+        <div class="w-6 sm:w-8 md:w-11 bg-black opacity-[0.16] h-px"></div>
         <a
           href="https://github.com/designwithjack"
           target="_blank"
@@ -43,7 +43,7 @@
           />
           <span class="hidden sm:inline">GitHub</span>
         </a>
-        <div class="w-8 md:w-11 bg-black opacity-[0.16] h-px"></div>
+        <div class="w-6 sm:w-8 md:w-11 bg-black opacity-[0.16] h-px"></div>
         <a
           href="mailto:hello@designwithjack.com?subject=Chat%20with%20Jack"
           target="_blank"
