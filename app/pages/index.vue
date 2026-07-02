@@ -58,8 +58,8 @@
           </ExperienceItem>
           <ExperienceItem
             company="ghSmart"
-            role="Fractional Principal Product Designer"
-            dates="Jul 2023 — May 2024"
+            role="Fractional Staff Product Designer"
+            dates="Jun 2023 — May 2024"
           >
             <p>
               Teamed up with a former colleague in their new role as Head of
