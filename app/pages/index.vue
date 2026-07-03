@@ -32,14 +32,16 @@
             dates="May 2025 — Apr 2026"
           >
             <p>
-              Speckle is a Series A startup building software used by thousands
-              of professionals in architecture, engineering, and construction.
-              Wearing many hats, I worked end-to-end from design through to
-              frontend implementation on features that ship to production. I
-              used AI to synthesise insights from customer research and Cursor
-              to accelerate development. I paired closely with product experts
-              and engineering teams to collaborate on the design system, web
-              app, and marketing website.
+              Speckle is a Series A startup building B2B SaaS for architecture,
+              engineering, and construction. I shipped design-to-production
+              features end-to-end, using Cursor and Claude to close the handoff
+              gap and keep a small engineering team moving fast. I extended and
+              unified the design system through a full website migration,
+              aligning tokens and components with the web app, and led brand and
+              identity work that sharpened consistency across touchpoints
+              without a full rebrand. I also partnered with growth and GTM teams
+              to design collaboration features requested by enterprise clients,
+              shaping the sales materials behind new account wins.
             </p>
           </ExperienceItem>
           <ExperienceItem
@@ -48,12 +50,14 @@
             dates="Jul 2021 — Apr 2025"
           >
             <p>
-              Leading design across multiple B2B SaaS products as part of a
-              cross-functional team, I also took ownership of the internal
-              design system — including spearheading a refresh of styles and
-              tokens to improve legibility and accessibility. Alongside my core
-              work, I mentored designers and contributed to growing the team
-              through candidate interviews.
+              I held staff-level oversight across multiple products on the
+              Periscope platform, alongside bespoke design work for standalone
+              SaaS initiatives outside it. I owned the design system, merging
+              components from a legacy UI library and establishing a governance
+              model for contribution and maintenance with front end. As the team
+              doubled in size, I acted as player-coach, mentoring designers and
+              taking an active role in hiring, while partnering with external
+              vendors on shared initiatives.
             </p>
           </ExperienceItem>
           <ExperienceItem
@@ -62,29 +66,29 @@
             dates="Jun 2023 — May 2024"
           >
             <p>
-              Teamed up with a former colleague in their new role as Head of
-              Product, working from the ground up to design an app used as part
-              of executive hiring. Improved the efficiency of in-house
-              consultants by productising existing workflows, while remaining
-              focused on the potential to unlock additional revenue by making
-              the platform accessible to clients.
-            </p>
-          </ExperienceItem>
+              I joined a former colleague newly appointed Head of Product for
+              0-to-1 discovery and design of an enterprise app used in
+              high-value executive hiring. My findings shaped the product from a
+              broad employee-lifecycle tool into one focused squarely on the
+              hiring workflow. I replaced manual, fragmented consultant
+              workflows with AI-enabled tooling, removing interviewing friction
+              and cutting scorecard creation time in half, and designed the
+              self-serve admin area that made a client-facing revenue model
+              viable.
+            </p></ExperienceItem
+          >
           <ExperienceItem
             company="Sennep"
             role="Senior Product Designer"
             dates="Sep 2015 — Jul 2021"
           >
             <p>
-              Applying user-centred design principles to complex data analysis
-              tools, I validated end-to-end solutions with clients and
-              stakeholders — from wireframes through to high-fidelity prototypes
-              and developer-ready specs. I co-facilitated design sprint
-              workshops with client teams across Europe and North America,
-              helping procure funding for further product development. A keen
-              contributor to team culture, I hosted regular lunch & learn
-              sessions on topics such as groupthink, permaculture and
-              philosophy.
+              I took complex data analysis tools from wireframe through to
+              developer handoff, validating each stage directly with clients and
+              stakeholders. I was forward deployed to on-site design sprints
+              across Europe and North America that helped secure funding for
+              further product development, and ran regular lunch & learns,
+              including a remote yoga session during lockdown.
             </p>
           </ExperienceItem>
           <AnimatePresence>
@@ -101,12 +105,12 @@
                 dates="Mar 2015 — Jul 2015"
               >
                 <p>
-                  Working with an early-stage startup building a video biography
-                  and family history app, I led product discovery through
-                  founder workshops following Lean practices to evolve their
-                  vision, with the support of user testing and research. I also
-                  contributed to brand exploration, UI design, and prototyping
-                  for A/B testing.
+                  I led the product design discovery phase for a video biography
+                  and family history startup. Using founder workshops with a
+                  Lean methodology, I helped the team discover their vision and
+                  define the opportunity, backing it up with evidence from
+                  research and user testing, and covered brand and identity, UI
+                  design, and prototyping for A/B PMF testing.
                 </p>
               </ExperienceItem>
               <ExperienceItem
@@ -115,11 +119,13 @@
                 dates="Dec 2013 — Jul 2014"
               >
                 <p>
-                  Designing physical experiences for the launch of a series of
-                  fun, interactive exhibits that explored the future of energy,
-                  I also mentored and line managed junior designers while
-                  providing creative direction to freelancers working across AV,
-                  interactive, and VR experiences.
+                  I directed a B2C youth education engagement piece, launching
+                  playful, interactive installations that blended digital media
+                  with physical interactivity as part of an exhibition exploring
+                  the future of energy. I was direct line manager and mentor for
+                  junior designers on the team, and directed external
+                  freelancers creating audio visual, interactive, and VR
+                  experiences.
                 </p>
               </ExperienceItem>
               <ExperienceItem
