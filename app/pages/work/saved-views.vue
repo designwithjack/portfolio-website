@@ -1,30 +1,43 @@
 <template>
   <div class="page-content">
-    <div class="page-container pt-40 lg:pt-54 pb-24">
-      <section
-        class="xs:text-4xl xs:leading-11 text-xl leading-5 font-light text-balance"
-      >
+    <div class="page-container pt-[clamp(128px,20vw,244px)] pb-24">
+      <section class="text-base leading-6 tracking-[0.0075em] font-light">
         <ScrollReveal>
-          <h1 class="text-3xl pb-10">Saved Views</h1>
-          <h2
-            class="text-lg leading-16 xs:text-xl md:text-lg lg:text-6xl font-light text-foreground pb-24 max-w-2xl"
-          >
+          <div class="pl-1 flex items-center gap-3 h-7 mb-10">
+            <div class="size-2 bg-muted rounded-full"></div>
+            <p
+              class="mt-0.5 text-sm leading-none font-medium tracking-[0.11em] uppercase text-muted"
+            >
+              Case Study — Saved Views
+            </p>
+          </div>
+          <h1 class="fluid-display pb-12 md:pb-16 lg:pb-18">
             Save, organise and share viewer states of your 3D models
-          </h2>
-          <div class="flex flex-col lg:flex-row lg:w-full gap-7">
-            <div class="flex flex-col gap-7 lg:w-1/2">
-              <div class="flex xs:flex-row flex-col gap-2 xs:gap-6 text-base">
+          </h1>
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <div class="grid sm:grid-cols-32 grid-cols-1">
+            <div class="sm:col-span-15 col-span-1 pb-9 sm:pb-0">
+              <h2 class="font-light text-2xl leading-9 tracking-[0.005em] pb-6">
+                Info
+              </h2>
+              <div
+                class="flex flex-col xs:flex-row sm:flex-col lg:flex-row gap-2 xs:gap-6 sm:gap-2 lg:gap-6 pb-6"
+              >
                 <h4
-                  class="w-20 shrink-0 text-xs font-medium tracking-[0.105em] uppercase text-muted leading-6 pt-px"
+                  class="w-30 lg:w-21 xl:w-30 shrink-0 text-xs font-medium tracking-[0.11em] uppercase text-muted leading-6"
                 >
                   Company
                 </h4>
 
                 <p>Speckle</p>
               </div>
-              <div class="flex xs:flex-row flex-col gap-2 xs:gap-6 text-base">
+              <div
+                class="flex flex-col xs:flex-row sm:flex-col lg:flex-row gap-2 xs:gap-6 sm:gap-2 lg:gap-6 pb-6"
+              >
                 <h4
-                  class="w-20 shrink-0 text-xs font-medium tracking-[0.105em] uppercase text-muted leading-6 pt-px"
+                  class="w-30 lg:w-21 xl:w-30 shrink-0 text-xs font-medium tracking-[0.11em] uppercase text-muted leading-6"
                 >
                   Team
                 </h4>
@@ -33,25 +46,46 @@
                   <p>Fabiāns Geikins — Full-stack Developer</p>
                 </div>
               </div>
-            </div>
-            <div
-              class="flex xs:flex-row flex-col gap-3 xs:gap-6 text-base lg:w-1/2"
-            >
-              <h4
-                class="w-[70px] shrink-0 text-xs font-medium tracking-[0.105em] uppercase text-muted leading-6 pt-px"
-              >
-                Skills
-              </h4>
               <div
-                class="flex flex-wrap gap-x-1.5 xs:gap-x-1 gap-y-2 xs:gap-y-1.5 h-fit -ml-1.5 xs:ml-0"
+                class="flex flex-col xs:flex-row sm:flex-col lg:flex-row gap-2 xs:gap-6 sm:gap-2 lg:gap-6 pb-6"
               >
-                <tag label="User Research" />
-                <tag label="Prototyping" />
-                <tag label="Journey Mapping" />
-                <tag label="Interface Design" />
-                <tag label="Frontend Development" />
+                <h4
+                  class="w-30 lg:w-21 xl:w-30 shrink-0 text-xs font-medium tracking-[0.11em] uppercase text-muted leading-6"
+                >
+                  Skills
+                </h4>
+                <div class="flex flex-wrap gap-x-3 gap-y-2 xs:gap-y-1.5 h-fit">
+                  <tag label="User Research" />
+                  <tag label="Journey Mapping" />
+                  <tag label="Prototyping" />
+
+                  <tag label="Interface Design" />
+                  <tag label="Frontend Development" :show-dot="false" />
+                </div>
               </div>
             </div>
+            <div class="sm:col-start-18 sm:col-span-15 col-span-1">
+              <h2 class="font-light text-2xl leading-9 tracking-[0.005em] pb-6">
+                Overview
+              </h2>
+              <p>
+                Working end to end, leading the design, then buidling alongside
+                the engineer to make sure the shipped product matched the
+                intended experience.
+              </p>
+            </div>
+          </div>
+        </ScrollReveal>
+      </section>
+      <section class="pt-18">
+        <ScrollReveal>
+          <div class="rounded-[clamp(2px,0.5vw,6.5px)] overflow-hidden">
+            <img
+              loading="lazy"
+              src="/images/projects/speckle/speckle-header.jpg"
+              alt="Saved Views Screenshot"
+              class="w-full h-auto"
+            />
           </div>
         </ScrollReveal>
       </section>
