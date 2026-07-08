@@ -17,9 +17,9 @@
       </NuxtLink>
       <nav class="flex items-center gap-1.5">
         <div
-          class="flex items-center gap-1.5"
           v-for="(link, index) in navLinks"
           :key="link.href"
+          class="flex items-center gap-1.5"
         >
           <div v-if="index > 0" class="w-4 h-px bg-white opacity-40" />
           <NavLink :to="link.href" :label="link.label" />

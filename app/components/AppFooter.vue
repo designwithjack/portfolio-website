@@ -19,8 +19,8 @@
         <template v-for="(link, index) in footerLinks" :key="link.href">
           <motion.a
             :href="link.href"
-            target="_blank"
-            rel="noopener noreferrer"
+            :target="link.external ? '_blank' : undefined"
+            :rel="link.external ? 'noopener noreferrer' : undefined"
             class="flex size-10 shrink-0 items-center justify-center sm:size-auto sm:justify-start sm:gap-3.5 sm:py-2"
             :while-hover="footerLinkWhileHover"
           >
@@ -54,16 +54,19 @@ const footerLinks = [
     href: "https://www.linkedin.com/in/jack-os",
     label: "LinkedIn",
     icon: "/images/linkedin.svg",
+    external: true,
   },
   {
     href: "https://github.com/designwithjack",
     label: "GitHub",
     icon: "/images/github.svg",
+    external: true,
   },
   {
     href: "mailto:hello@designwithjack.com?subject=Chat%20with%20Jack",
     label: "Email",
     icon: "/images/email.svg",
+    external: false,
   },
 ] as const;
 

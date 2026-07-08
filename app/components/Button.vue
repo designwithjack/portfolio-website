@@ -1,12 +1,14 @@
 <template>
-  <button
-    :type="type"
+  <component
+    :is="rootTag"
+    :type="rootTag === 'button' ? type : undefined"
+    :href="rootTag === 'a' ? href : undefined"
     class="inline-flex cursor-pointer items-center justify-center rounded-full font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
     :class="[variantClasses, sizeClasses]"
     v-bind="$attrs"
   >
     <slot />
-  </button>
+  </component>
 </template>
 
 <script setup lang="ts">
@@ -19,6 +21,7 @@ interface Props {
   variant?: ButtonVariant;
   type?: "button" | "submit" | "reset";
   size?: ButtonSize;
+  href?: string;
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -26,6 +29,8 @@ const props = withDefaults(defineProps<Props>(), {
   type: "button",
   size: "md",
 });
+
+const rootTag = computed(() => (props.href ? "a" : "button"));
 
 const variantClasses = computed(() => {
   switch (props.variant) {

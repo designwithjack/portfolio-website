@@ -32,7 +32,7 @@
           :variants="passThroughVariants"
         >
           <h2
-            class="text-xl xs:text-2xl leading:8 xs:leading-9 tracking-[0.014em] xs:tracking-[0.005em] font-light text-foreground"
+            class="text-xl xs:text-2xl leading-8 xs:leading-9 tracking-[0.014em] xs:tracking-[0.005em] font-light text-foreground"
           >
             {{ title }}
           </h2>
@@ -83,7 +83,10 @@ const rootAttrs = computed(() => {
   if (!props.href) return {};
   return {
     to: props.href,
-    ...(props.openInNewTab && { target: "_blank" }),
+    ...(props.openInNewTab && {
+      target: "_blank",
+      rel: "noopener noreferrer",
+    }),
   };
 });
 
