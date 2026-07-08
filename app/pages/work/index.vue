@@ -190,7 +190,7 @@
             <Button
               variant="primary"
               size="xl"
-              href="mailto:hello@designwithjack.com?subject=Chat%20with%20Jack"
+              href="mailto:hello@designwithjack.com?subject=Request%Case%20Study%20Access"
             >
               Request access
             </Button>
