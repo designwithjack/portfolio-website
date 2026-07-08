@@ -19,9 +19,12 @@
         <template v-for="(link, index) in footerLinks" :key="link.href">
           <motion.a
             :href="link.href"
-            :target="link.external ? '_blank' : undefined"
-            :rel="link.external ? 'noopener noreferrer' : undefined"
-            class="flex size-10 shrink-0 items-center justify-center sm:size-auto sm:justify-start sm:gap-3.5 sm:py-2"
+            v-bind="
+              link.external
+                ? { target: '_blank', rel: 'noopener noreferrer' }
+                : {}
+            "
+            class="flex size-10 shrink-0 cursor-pointer items-center justify-center sm:size-auto sm:justify-start sm:gap-3.5 sm:py-2"
             :while-hover="footerLinkWhileHover"
           >
             <img

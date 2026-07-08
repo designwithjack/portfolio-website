@@ -86,7 +86,7 @@
                 Overview
               </h2>
               <p>
-                Working end to end, leading the design, then buidling alongside
+                Working end to end, leading the design, then building alongside
                 the engineer to make sure the shipped product matched the
                 intended experience.
               </p>
