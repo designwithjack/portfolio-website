@@ -36,7 +36,7 @@
             href="https://www.figma.com/deck/zxodmwTLKd4I1e7eZg9uJw/Case-Study---Saved-Views?node-id=1-275&t=np2ZG5juzeD4AalW-1"
             open-in-new-tab
           >
-            <div>
+            <div class="pt-2">
               <p
                 class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
               >
@@ -64,7 +64,7 @@
               alt="Screenshot of the ghSmart platform"
               :image-left="true"
             >
-              <div>
+              <div class="pt-2">
                 <p
                   class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
                 >
@@ -83,7 +83,7 @@
               :image-left="false"
             >
               <div class="flex flex-col xs:flex-row gap-4 xs:gap-0">
-                <div class="w-54">
+                <div class="w-54 pt-2">
                   <p
                     class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
                   >
@@ -111,7 +111,7 @@
               :image-left="true"
             >
               <div class="flex flex-col xs:flex-row gap-4 xs:gap-0">
-                <div class="w-54">
+                <div class="w-54 pt-2">
                   <p
                     class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
                   >
@@ -139,7 +139,7 @@
               :image-left="false"
             >
               <div class="flex flex-col xs:flex-row gap-4 xs:gap-0">
-                <div class="w-54">
+                <div class="w-54 pt-2">
                   <p
                     class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
                   >
@@ -167,7 +167,7 @@
               :image-left="true"
             >
               <div class="flex flex-col xs:flex-row gap-4 xs:gap-0">
-                <div class="w-54">
+                <div class="w-54 pt-2">
                   <p
                     class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
                   >

@@ -1,6 +1,6 @@
 <template>
   <div class="page-content">
-    <div class="page-container pt-[clamp(128px,20vw,244px)] pb-24">
+    <div class="page-container pt-[clamp(180px,20vw,244px)] pb-24">
       <section class="text-base leading-6 tracking-[0.0075em] font-light">
         <ScrollReveal>
           <div class="pl-1 flex items-center gap-3 h-7 mb-10">
@@ -11,14 +11,31 @@
               Case Study — Saved Views
             </p>
           </div>
-          <h1 class="fluid-display pb-12 md:pb-16 lg:pb-18">
+          <h1 class="fluid-display">
             Save, organise and share viewer states of your 3D models
           </h1>
         </ScrollReveal>
-
+      </section>
+      <section class="pt-[clamp(44px,5vw,72px)]">
+        <ScrollReveal>
+          <div
+            class="rounded-[clamp(2px,0.5vw,6.4px)] overflow-hidden my-3 sm:my-6 md:my-8"
+          >
+            <img
+              loading="lazy"
+              src="/images/projects/speckle/speckle-header.jpg"
+              alt="Saved Views Screenshot"
+              class="w-full h-auto"
+            />
+          </div>
+        </ScrollReveal>
+      </section>
+      <section
+        class="text-base leading-6 tracking-[0.0075em] font-light pt-[clamp(44px,5vw,64px)]"
+      >
         <ScrollReveal>
           <div class="grid sm:grid-cols-32 grid-cols-1">
-            <div class="sm:col-span-15 col-span-1 pb-9 sm:pb-0">
+            <div class="sm:col-span-15 col-span-1 pb-7 sm:pb-0">
               <h2 class="font-light text-2xl leading-9 tracking-[0.005em] pb-6">
                 Info
               </h2>
@@ -77,28 +94,16 @@
           </div>
         </ScrollReveal>
       </section>
-      <section class="pt-18">
-        <ScrollReveal>
-          <div class="rounded-[clamp(2px,0.5vw,6.5px)] overflow-hidden">
-            <img
-              loading="lazy"
-              src="/images/projects/speckle/speckle-header.jpg"
-              alt="Saved Views Screenshot"
-              class="w-full h-auto"
-            />
-          </div>
-        </ScrollReveal>
-      </section>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 useSeoMeta({
-  title: "Play — Jack Hughes",
-  description: "Personal and experimental projects.",
-  ogTitle: "Play — Jack Hughes",
-  ogDescription: "Personal and experimental projects.",
+  title: "Jack Hughes — Case Study — Saved Views",
+  description: "Save, organise and share viewer states of your 3D models",
+  ogTitle: "Jack Hughes — Case Study — Saved Views",
+  ogDescription: "Save, organise and share viewer states of your 3D models",
   ogImage: "/images/og-default.png",
   twitterCard: "summary_large_image",
 });

@@ -46,9 +46,10 @@
   --fluid-display-size: clamp(54px, 8.4vw, 121px);
   --fluid-display-line-height: clamp(
     1.091,
-    1.26 + (1.091 - 1.26) * ((100vw - 642px) / (1440px - 642px)),
-    1.26
+    1.12 + (1.091 - 1.12) * ((100vw - 642px) / (1440px - 642px)),
+    1.12
   );
+
   --fluid-display-letter-spacing: clamp(
     -0.0231em,
     -0.016em + (-0.0231em - -0.016em) * ((100vw - 642px) / (1440px - 642px)),
