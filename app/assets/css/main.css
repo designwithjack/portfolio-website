@@ -108,7 +108,7 @@
   --page-container-vw: 90vw;
   --header-padding-top-max: clamp(40px, calc(10vw * 0.8), 96px);
   /* --header-fade-height-max: clamp(60px, calc(10vw * 1.2), 144px); */
-  --header-fade-height-max: 72px;
+  --header-fade-height-max: 95px;
 }
 @media (min-width: 720px) {
   :root {
@@ -166,14 +166,14 @@
       to bottom,
       black 8%,
 
-      /* Hold opacity higher for longer */ rgba(0, 0, 0, 0.1) 84%,
+      /* Hold opacity higher for longer */ rgba(0, 0, 0, 0.1) 85%,
       /* Gradual middle transition */ transparent 100%
     );
     -webkit-mask-image: linear-gradient(
       to bottom,
       black 8%,
 
-      rgba(0, 0, 0, 0.1) 84%,
+      rgba(0, 0, 0, 0.1) 85%,
       transparent 100%
     );
   }

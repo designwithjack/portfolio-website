@@ -32,9 +32,7 @@
             title="Saved Views"
             description="Save, organise and share viewer states of your 3D models"
             alt="Screenshot of the Speckle web app"
-            :image-left="true"
-            href="https://www.figma.com/deck/zxodmwTLKd4I1e7eZg9uJw/Case-Study---Saved-Views?node-id=1-275&t=np2ZG5juzeD4AalW-1"
-            open-in-new-tab
+            href="/work/saved-views"
           >
             <div class="pt-2">
               <p
@@ -62,7 +60,6 @@
               title="Leadership Development Platform"
               description="Define and assess the success of key hires and leaders"
               alt="Screenshot of the ghSmart platform"
-              :image-left="true"
             >
               <div class="pt-2">
                 <p
@@ -80,10 +77,9 @@
               title="Marketing Spend Advisor"
               description="Analysing industry insights to optimise marketing budgets"
               alt="Screenshot of the Marketing Spend Advisor dashboard"
-              :image-left="false"
             >
-              <div class="flex flex-col xs:flex-row gap-4 xs:gap-0">
-                <div class="w-54 pt-2">
+              <div class="flex flex-col xs:flex-row gap-4 xs:gap-0 pt-2">
+                <div class="w-54">
                   <p
                     class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
                   >
@@ -108,10 +104,9 @@
               title="Customer Experience Accelerator"
               description="Improving customer journeys that create the most value"
               alt="Screenshot from the Customer Experience Accelerator reports"
-              :image-left="true"
             >
-              <div class="flex flex-col xs:flex-row gap-4 xs:gap-0">
-                <div class="w-54 pt-2">
+              <div class="flex flex-col xs:flex-row gap-4 xs:gap-0 pt-2">
+                <div class="w-54">
                   <p
                     class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
                   >
@@ -136,10 +131,9 @@
               title="Prizm Design System"
               description="Harmonising design across global teams and enterprise tools"
               alt="Screenshot from the design system documentation"
-              :image-left="false"
             >
-              <div class="flex flex-col xs:flex-row gap-4 xs:gap-0">
-                <div class="w-54 pt-2">
+              <div class="flex flex-col xs:flex-row gap-4 xs:gap-0 pt-2">
+                <div class="w-54">
                   <p
                     class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
                   >
@@ -164,10 +158,9 @@
               title="Promotion Advisor"
               description="Collaborative plans and forecasts for retailer promotions"
               alt="Screenshot from Promotion Advisor"
-              :image-left="true"
             >
-              <div class="flex flex-col xs:flex-row gap-4 xs:gap-0">
-                <div class="w-54 pt-2">
+              <div class="flex flex-col xs:flex-row gap-4 xs:gap-0 pt-2">
+                <div class="w-54">
                   <p
                     class="text-xs font-medium tracking-[0.15em] uppercase text-muted pt-1 lg:pb-1"
                   >
