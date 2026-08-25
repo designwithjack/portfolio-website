@@ -96,7 +96,12 @@
           </div>
         </ScrollReveal>
       </section>
-      <CaseStudySection heading="Value for the whole team">
+
+      <CaseStudySection
+        heading="Value for the whole team"
+        chapter="01 — Problem"
+        show-chapter
+      >
         <p>
           We were given the goal to convert more free workspace members to paid
           seats. Through our research, Saved Views started to feel like a solid
@@ -108,7 +113,11 @@
           looking at felt like a meaningful step toward closing that gap.
         </p>
       </CaseStudySection>
-      <CaseStudySection heading="Listening to users">
+      <CaseStudySection
+        heading="Listening to users"
+        chapter="02 — Research"
+        show-chapter
+      >
         <p>
           The community forum provided direct access to how users were thinking
           about features, and made it easy to reach out and learn more through
@@ -144,7 +153,11 @@
           modern and considered.
         </p>
       </CaseStudySection>
-      <CaseStudySection heading="Piecing it together">
+      <CaseStudySection
+        heading="Piecing it together"
+        chapter="03 — Challenges"
+        show-chapter
+      >
         <p>
           The design of Saved Views was running parallel to a redesign of the
           broader viewer UI, with larger surfaces shifting around it.
@@ -181,7 +194,11 @@
           for keeping things organised.
         </p>
       </CaseStudySection>
-      <CaseStudySection heading="Closing the gap">
+      <CaseStudySection
+        heading="Closing the gap"
+        chapter="04 — Collaboration"
+        show-chapter
+      >
         <p>
           Once the core functionality was in place, I worked directly in the
           codebase to make it feel the way it was designed to.
@@ -195,7 +212,11 @@
           been pushing for.
         </p>
       </CaseStudySection>
-      <CaseStudySection heading="A detail that mattered">
+      <CaseStudySection
+        heading="A detail that mattered"
+        chapter="05 — Outcomes"
+        show-chapter
+      >
         <p>
           Embedding interactive 3D models into Miro boards was already a
           favourite feature for teams.
