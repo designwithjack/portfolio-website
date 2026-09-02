@@ -101,6 +101,7 @@
         heading="Value for the whole team"
         chapter="01 — Problem"
         show-chapter
+        image="/images/case-study/saved-views-value.jpg"
       >
         <p>
           We were given the goal to convert more free workspace members to paid
@@ -117,6 +118,7 @@
         heading="Listening to users"
         chapter="02 — Research"
         show-chapter
+        image="/images/case-study/saved-views-community.jpg"
       >
         <p>
           The community forum provided direct access to how users were thinking
@@ -129,7 +131,10 @@
           revenue lever.
         </p>
       </CaseStudySection>
-      <CaseStudySection heading="The unusual workaround">
+      <CaseStudySection
+        heading="The unusual workaround"
+        image="/images/case-study/saved-views-workaround.jpg"
+      >
         <p>
           We discovered that some users had been exploiting the fact that
           comments capture camera state, using the Discussions feature as a
@@ -141,7 +146,10 @@
         </p>
         <p>It was clear that the feature had real user value.</p>
       </CaseStudySection>
-      <CaseStudySection heading="Competitive landscape">
+      <CaseStudySection
+        heading="Competitive landscape"
+        image="/images/case-study/saved-views-competition.jpg"
+      >
         <p>
           I reviewed how other tools in the space tackled the problem. Trimble
           Connect came up repeatedly in forum discussions, providing a useful
@@ -182,7 +190,10 @@
           default, and groups are limited to a single level.
         </p>
       </CaseStudySection>
-      <CaseStudySection heading="Removing friction">
+      <CaseStudySection
+        heading="Removing friction"
+        image="/images/case-study/saved-views-friction.jpg"
+      >
         <p>
           Internal feedback made it clear that creating a view needed to feel
           effortless. It would have been technically simpler to use a modal
@@ -198,6 +209,7 @@
         heading="Closing the gap"
         chapter="04 — Collaboration"
         show-chapter
+        image="/images/case-study/saved-views-coding.jpg"
       >
         <p>
           Once the core functionality was in place, I worked directly in the

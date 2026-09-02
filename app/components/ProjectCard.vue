@@ -14,8 +14,8 @@
           :src="image"
           :alt="alt"
           class="w-full object-cover"
-          width="640"
-          height="360"
+          width="1152px"
+          height="100%"
           loading="lazy"
           :variants="imageVariants"
         />

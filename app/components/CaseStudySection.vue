@@ -1,9 +1,4 @@
 <template>
-  <ScrollReveal v-if="showMedia">
-    <div
-      class="aspect-video bg-[#1C1C1C] w-full mt-14 xs:mt-18 overflow-hidden rounded-[clamp(9px,1.25vw,18px)]"
-    ></div>
-  </ScrollReveal>
   <ScrollReveal class="flex justify-start md:justify-end my-14 xs:my-18">
     <div class="w-0" v-if="showChapter">
       <h4
@@ -13,7 +8,7 @@
       </h4>
     </div>
     <div
-      class="flex flex-col gap-6 xs:gap-8 max-w-135 md:w-[60vw] pl-14 xs:pl-16"
+      class="flex flex-col gap-6 xs:gap-8 max-w-135 md:w-[60vw] ml-14 xs:ml-16 pr-3 md:pr-0"
     >
       <h2
         class="xs:text-4xl xs:leading-12 text-3xl leading-10 -tracking-[0.005em] font-light text-balance"
@@ -27,15 +22,23 @@
       </div>
     </div>
   </ScrollReveal>
+  <ScrollReveal v-if="showMedia">
+    <div class="bg-[#1C1C1C] w-full h-auto mt-14 xs:mt-18 overflow-hidden">
+      <motion.img :src="image" width="100%" height="100%" loading="lazy" />
+    </div>
+  </ScrollReveal>
 </template>
 
 <script setup lang="ts">
+import { motion } from "motion-v";
+
 withDefaults(
   defineProps<{
     heading: string;
     chapter?: string;
     showMedia?: boolean;
     showChapter?: boolean;
+    image?: string;
   }>(),
   {
     showMedia: true,
