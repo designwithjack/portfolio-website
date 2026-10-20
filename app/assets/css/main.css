@@ -39,11 +39,33 @@
   --color-foreground: #ffffff;
   --color-muted: rgba(255, 255, 255, 0.7);
   --color-border: rgba(255, 255, 255, 0.2);
-  --page-max-width: 1440px;
+  --page-max-width: 1152px;
 
   --breakpoint-xs: 30rem; /* 480px */
 
-  --fluid-heading: clamp(36px, 4.5vw, 58px);
+  --fluid-display-size: clamp(54px, 8.4vw, 121px);
+  --fluid-display-line-height: clamp(
+    1.091,
+    1.12 + (1.091 - 1.12) * ((100vw - 642px) / (1440px - 642px)),
+    1.12
+  );
+
+  --fluid-display-letter-spacing: clamp(
+    -0.0231em,
+    -0.016em + (-0.0231em - -0.016em) * ((100vw - 642px) / (1440px - 642px)),
+    -0.016em
+  );
+  --fluid-heading-size: clamp(36px, 4.5vw, 58px);
+  --fluid-heading-line-height: clamp(
+    1.24,
+    1.33 + (1.24 - 1.33) * ((100vw - 800px) / (1289px - 800px)),
+    1.33
+  );
+  --fluid-heading-letter-spacing: clamp(
+    -0.016em,
+    -0.0078em + (-0.016em - -0.0078em) * ((100vw - 800px) / (1289px - 800px)),
+    -0.0078em
+  );
 }
 @utility heading-2xl {
   font-weight: 300;
@@ -56,11 +78,17 @@
     letter-spacing: -0.017em;
   }
 }
-@utility fluid-heading {
-  font-size: var(--fluid-heading);
+@utility fluid-display {
+  font-size: var(--fluid-display-size);
   font-weight: 300;
-  line-height: 1.25;
-  letter-spacing: -0.016em;
+  line-height: var(--fluid-display-line-height);
+  letter-spacing: var(--fluid-display-letter-spacing);
+}
+@utility fluid-heading {
+  font-size: var(--fluid-heading-size);
+  font-weight: 300;
+  line-height: var(--fluid-heading-line-height);
+  letter-spacing: var(--fluid-heading-letter-spacing);
 }
 
 /* Base resets */
@@ -80,7 +108,7 @@
   --page-container-vw: 90vw;
   --header-padding-top-max: clamp(40px, calc(10vw * 0.8), 96px);
   /* --header-fade-height-max: clamp(60px, calc(10vw * 1.2), 144px); */
-  --header-fade-height-max: 72px;
+  --header-fade-height-max: 95px;
 }
 @media (min-width: 720px) {
   :root {
@@ -111,7 +139,6 @@
   --color-border: rgba(0, 0, 0, 0.22);
 }
 
-
 /* Page content wrapper — use this as the outermost div on each page.
    Rounds the bottom corners and adds clearance so the fixed footer is exposed
    when the user scrolls to the end. */
@@ -139,14 +166,14 @@
       to bottom,
       black 8%,
 
-      /* Hold opacity higher for longer */ rgba(0, 0, 0, 0.1) 84%,
+      /* Hold opacity higher for longer */ rgba(0, 0, 0, 0.1) 85%,
       /* Gradual middle transition */ transparent 100%
     );
     -webkit-mask-image: linear-gradient(
       to bottom,
       black 8%,
 
-      rgba(0, 0, 0, 0.1) 84%,
+      rgba(0, 0, 0, 0.1) 85%,
       transparent 100%
     );
   }

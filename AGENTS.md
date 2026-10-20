@@ -16,7 +16,7 @@ and clarity matter as much as correctness.
   not `tailwind.config.js`. Do not generate or reference a `tailwind.config.js` file.
 - `lucide-vue-next` for icons — always use this, never suggest an alternative
 - `@nuxt/content` for case study pages (markdown + frontmatter)
-- Motion for Vue (`motion-v`) for all animations and transitions
+- Motion for Vue (`motion-v`) for animations and micro-interactions
 - No UI component library
 
 ## Package manager
@@ -62,8 +62,9 @@ Do not install new dependencies without asking first.
 
 ## Motion and animation
 
-- Use Motion for Vue (`motion-v`) for all animation — never CSS keyframes,
-  CSS transitions, or any other animation library
+- Prefer Motion for Vue (`motion-v`) for animations and micro-interactions.
+  CSS transitions are fine for simple state changes (e.g. hover colour on
+  buttons and links). Do not use CSS keyframes or other animation libraries
 - Always use the shared `usePrefersReducedMotion` composable to gate animations.
   Never write the `prefers-reduced-motion` conditional inline
 - Micro-interactions should feel considered and purposeful — default to subtle

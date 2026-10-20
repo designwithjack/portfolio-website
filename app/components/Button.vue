@@ -30,6 +30,8 @@ const props = withDefaults(defineProps<Props>(), {
   size: "md",
 });
 
+const rootTag = computed(() => (props.href ? "a" : "button"));
+
 const variantClasses = computed(() => {
   switch (props.variant) {
     case "primary":

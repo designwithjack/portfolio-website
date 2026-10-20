@@ -161,14 +161,14 @@
               >
                 <div class="min-w-40 sm:min-w-[180px] md:min-w-[288px] pr-9">
                   <h4
-                    class="sm:w-[180px] md:w-[288px] text-base leading-6 font-medium tracking:[0.0075em]"
+                    class="sm:w-[180px] md:w-[288px] text-base leading-6 font-medium tracking-[0.0075em]"
                   >
                     Other previous experience
                   </h4>
                 </div>
 
                 <p
-                  class="w-full text-base font-light leading-6 tracking:[0.0075em]"
+                  class="w-full text-base font-light leading-6 tracking-[0.0075em]"
                 >
                   LBi, JWT, Suburb, DLKW
                 </p>
@@ -182,7 +182,7 @@
           ></div>
         </div>
 
-        <div class="mb-4 border-border border-b">
+        <div class="relative mb-4 border-border border-b">
           <Button
             variant="secondary"
             type="button"
@@ -208,13 +208,13 @@
           >
             <div class="min-w-40 sm:min-w-[180px] md:min-w-[288px] pr-9">
               <h4
-                class="sm:max-w-[180px] md:max-w-[288px] text-base leading-6 font-medium tracking:[0.0075em]"
+                class="sm:max-w-[180px] md:max-w-[288px] text-base leading-6 font-medium tracking-[0.0075em]"
               >
                 Bournemouth University
               </h4>
             </div>
             <div
-              class="w-full text-base font-light leading-6 tracking:[0.0075em]"
+              class="w-full text-base font-light leading-6 tracking-[0.0075em]"
             >
               <p>BA (Hons) Interactive Media Production</p>
             </div>
@@ -224,13 +224,13 @@
           >
             <div class="min-w-40 sm:min-w-[180px] md:min-w-[288px] pr-9">
               <h4
-                class="sm:max-w-[180px] md:max-w-[288px] text-base leading-6 font-medium tracking:[0.0075em] text-balance"
+                class="sm:max-w-[180px] md:max-w-[288px] text-base leading-6 font-medium tracking-[0.0075em] text-balance"
               >
                 Colchester School of Art
               </h4>
             </div>
             <div
-              class="w-full text-base font-light leading-6 tracking:[0.0075em]"
+              class="w-full text-base font-light leading-6 tracking-[0.0075em]"
             >
               <p>(BTech) Foundation Studies in Art & Design</p>
             </div>

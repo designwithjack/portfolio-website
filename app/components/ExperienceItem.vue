@@ -3,7 +3,7 @@
     class="border-border flex flex-col gap-4 border-b py-9 sm:flex-row sm:gap-0"
   >
     <div class="flex min-w-40 sm:min-w-[180px] md:min-w-[288px] flex-col pr-9">
-      <h4 class="text-base leading-6 font-medium tracking:[0.0075em]">
+      <h4 class="text-base leading-6 font-medium tracking-[0.0075em]">
         {{ company }}
       </h4>
       <p
@@ -16,7 +16,7 @@
       </p>
     </div>
     <div
-      class="max-w-[540px] text-base font-light leading-6 tracking:[0.0075em] text-pretty"
+      class="max-w-[540px] text-base font-light leading-6 tracking-[0.0075em] text-pretty"
     >
       <slot />
     </div>
