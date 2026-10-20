@@ -87,9 +87,19 @@
               <h2 class="font-light text-2xl leading-9 tracking-[0.005em] pb-6">
                 Overview
               </h2>
+              <p class="mb-3">
+                Speckle is a Series A startup that connects the data of
+                thousands of users working across architecture, engineering and
+                construction.
+              </p>
+              <p class="mb-3">
+                Introducing collaboration features was one bet toward increasing
+                revenue by growing the number of paid seats teams would get
+                value from.
+              </p>
               <p>
-                Working end to end, leading the design, then building alongside
-                the engineer to make sure the shipped product matched the
+                I worked end to end, leading the design, then building alongside
+                the engineers to make sure the shipped product matched the
                 intended experience.
               </p>
             </div>
@@ -122,11 +132,11 @@
       >
         <p>
           The community forum provided direct access to how users were thinking
-          about features, and made it easy to reach out and learn more through
-          interview calls.
+          about features, and to learn more about users' needs I set up research
+          interviews with a number of advocates.
         </p>
         <p>
-          Enthusiasm from one particular advocate at a large global design firm
+          Enthusiasm from one particular partner at a large global design firm
           was a strong signal, as adoption from them would be an impactful
           revenue lever.
         </p>
@@ -165,6 +175,7 @@
         heading="Piecing it together"
         chapter="03 — Challenges"
         show-chapter
+        image="/images/case-study/saved-views-ui.jpg"
       >
         <p>
           The design of Saved Views was running parallel to a redesign of the
@@ -176,7 +187,10 @@
           part of the product that would reach a much wider audience.
         </p>
       </CaseStudySection>
-      <CaseStudySection heading="Iterating through complexity">
+      <CaseStudySection
+        heading="Iterating through complexity"
+        image="/images/case-study/saved-views-iteration.jpg"
+      >
         <p>
           It's surprising when a proven UX pattern ends up being entirely
           unsuitable.
@@ -195,9 +209,9 @@
         image="/images/case-study/saved-views-friction.jpg"
       >
         <p>
-          Internal feedback made it clear that creating a view needed to feel
-          effortless. It would have been technically simpler to use a modal
-          upfront, but that felt too disruptive to broader workflows.
+          Feedback on early prototypes made it clear that creating a view needed
+          to feel effortless. It would have been technically simpler to use a
+          modal upfront, but that felt too disruptive to broader workflows.
         </p>
         <p>
           The solution was to remove that friction entirely. Views are created
@@ -228,6 +242,7 @@
         heading="A detail that mattered"
         chapter="05 — Outcomes"
         show-chapter
+        image="/images/case-study/saved-views-embedding.jpg"
       >
         <p>
           Embedding interactive 3D models into Miro boards was already a
@@ -241,7 +256,10 @@
           A little enhancement that made a popular use case a lot more useful.
         </p>
       </CaseStudySection>
-      <CaseStudySection heading="Setting up foundations">
+      <CaseStudySection
+        heading="Setting up foundations"
+        image="/images/case-study/saved-views-foundations.jpg"
+      >
         <p>Saved Views became the building block for future features.</p>
         <p>
           Presentations let teams compile a collection of views into an easily
@@ -252,9 +270,12 @@
           for quick async feedback from project directors.
         </p>
       </CaseStudySection>
-      <CaseStudySection heading="A payoff that wasn’t instant">
+      <CaseStudySection
+        heading="A payoff that wasn’t instant"
+        image="/images/case-study/saved-views-results.jpg"
+      >
         <p>
-          Forum feedback was positive, and we tracked adoption via Mixpanel.
+          User responses were positive, and we tracked adoption via Mixpanel.
         </p>
         <p>
           What we found was that the feature alone didn't move the needle on

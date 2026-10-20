@@ -23,7 +23,9 @@
     </div>
   </ScrollReveal>
   <ScrollReveal v-if="showMedia">
-    <div class="bg-[#1C1C1C] w-full h-auto mt-14 xs:mt-18 overflow-hidden">
+    <div
+      class="bg-[#1C1C1C] w-full h-auto mt-14 xs:mt-18 overflow-hidden rounded-[clamp(8px,1.25vw,14px)]"
+    >
       <motion.img :src="image" width="100%" height="100%" loading="lazy" />
     </div>
   </ScrollReveal>
