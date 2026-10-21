@@ -92,13 +92,7 @@
             </p>
           </ExperienceItem>
           <AnimatePresence>
-            <motion.div
-              v-if="showAllExperience"
-              key="experience-expandable"
-              :initial="expandVariants.initial"
-              :animate="expandVariants.animate"
-              :exit="expandVariants.exit"
-            >
+            <motion.div>
               <ExperienceItem
                 company="Elsewhen"
                 role="Senior Visual Designer"
@@ -175,13 +169,13 @@
               </ScrollReveal>
             </motion.div>
           </AnimatePresence>
-
+          <!--
           <div
             v-if="!showAllExperience"
             class="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-linear-to-t from-black to-transparent"
           ></div>
-        </div>
-
+        --></div>
+        <!--
         <div class="relative mb-4 border-border border-b">
           <Button
             variant="secondary"
@@ -194,7 +188,7 @@
             {{ showAllExperience ? "Show less" : "Show more" }}
           </Button>
         </div>
-      </section>
+      --></section>
       <section class="pt-[clamp(44px,5vw,72px)] border-border sm:border-b">
         <ScrollReveal
           as="h2"
@@ -276,3 +270,11 @@ const expandVariants = computed(() => {
   };
 });
 </script>
+
+<!--
+v-if="showAllExperience"
+              key="experience-expandable"
+              :initial="expandVariants.initial"
+              :animate="expandVariants.animate"
+              :exit="expandVariants.exit"
+-->
