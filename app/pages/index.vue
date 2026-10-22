@@ -28,7 +28,7 @@
         <div id="experience-content" class="relative">
           <ExperienceItem
             company="Speckle"
-            role="Product Designer"
+            role="Senior Product Designer"
             dates="May 2025 — Apr 2026"
           >
             <p>
